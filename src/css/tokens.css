@@ -1,0 +1,114 @@
+/* ════════════════════════════════════════════════
+   NTA DIGITAL — DESIGN TOKENS
+   Paleta: Preto & Amarelo Dourado (#FFB400)
+   Fontes: Space Grotesk (headings) + Inter (body)
+   ════════════════════════════════════════════════ */
+
+:root {
+    /* ── BACKGROUNDS ── */
+    --bg-primary: #080808;
+    --bg-card: #0F0F0F;
+    --bg-surface: #161616;
+    --bg-elevated: #1E1E1E;
+
+    /* ── TEXT ── */
+    --text-primary: #FFFFFF;
+    --text-secondary: #A0A0A0;
+    --text-tertiary: #5A5A5A;
+
+    /* ── ACCENT — GOLDEN YELLOW ── */
+    --amber: #FFB400;
+    --amber-light: #FFD54F;
+    --amber-dark: #E6A200;
+    --amber-glow: rgba(255, 180, 0, 0.35);
+    --amber-subtle: rgba(255, 180, 0, 0.08);
+
+    /* ── WHATSAPP ── */
+    --whatsapp: #25D366;
+    --whatsapp-dark: #1DA851;
+
+    /* ── STATUS ── */
+    --error: #EF4444;
+    --success: #22C55E;
+    --info: #3B82F6;
+
+    /* ── BORDERS ── */
+    --border-subtle: rgba(255, 255, 255, 0.06);
+    --border-standard: rgba(255, 255, 255, 0.10);
+    --border-amber: rgba(255, 180, 0, 0.4);
+
+    /* ── GRADIENTS ── */
+    --gradient-amber: linear-gradient(135deg, #FFB400, #FFD54F);
+    --gradient-amber-dark: linear-gradient(135deg, #E6A200, #FFB400);
+    --gradient-text: linear-gradient(90deg, #FFFFFF 30%, #FFB400 100%);
+    --gradient-card-fade: linear-gradient(180deg, rgba(255, 180, 0, 0.04), transparent);
+    --gradient-hero-radial: radial-gradient(ellipse at 50% 120%, rgba(255, 180, 0, 0.06) 0%, transparent 55%);
+
+    /* ── SPACING (8px base) ── */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-8: 32px;
+    --space-10: 40px;
+    --space-12: 48px;
+    --space-16: 64px;
+    --space-20: 80px;
+    --space-24: 96px;
+    --space-32: 128px;
+
+    /* ── TYPOGRAPHY ── */
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    --text-xs: 12px;
+    --text-sm: 14px;
+    --text-base: 16px;
+    --text-lg: 18px;
+    --text-xl: 20px;
+    --text-2xl: 24px;
+    --text-3xl: 32px;
+    --text-4xl: 40px;
+    --text-5xl: 48px;
+    --text-6xl: 64px;
+    --text-7xl: 80px;
+
+    /* ── RADIUS ── */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --radius-2xl: 32px;
+    --radius-full: 999px;
+
+    /* ── TRANSITIONS ── */
+    --ease-fast: 150ms ease;
+    --ease-base: 300ms ease;
+    --ease-slow: 500ms ease;
+    --ease-bounce: 500ms cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-spring: 600ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    /* ── SHADOWS ── */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+    --shadow-glow: 0 4px 24px var(--amber-glow);
+    --shadow-glow-lg: 0 8px 48px var(--amber-glow);
+
+    /* ── Z-INDEX ── */
+    --z-behind: -1;
+    --z-base: 0;
+    --z-dropdown: 10;
+    --z-sticky: 50;
+    --z-nav: 100;
+    --z-modal: 200;
+    --z-toast: 300;
+    --z-whatsapp: 500;
+
+    /* ── LAYOUT ── */
+    --container-max: 1200px;
+    --container-padding: 24px;
+    --nav-height: 64px;
+}

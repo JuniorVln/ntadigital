@@ -1,0 +1,159 @@
+/* ════════════════════════════════════════════════
+   NTA DIGITAL — ANIMATIONS & MOTION
+   ════════════════════════════════════════════════ */
+
+/* ── ENTRANCE ANIMATIONS ── */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); filter: blur(4px); }
+    to   { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeRight {
+    from { opacity: 0; transform: translateX(-24px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeLeft {
+    from { opacity: 0; transform: translateX(24px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.85); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-16px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── CONTINUOUS ANIMATIONS ── */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+@keyframes glow-pulse {
+    0%, 100% { box-shadow: 0 0 20px rgba(255, 180, 0, 0.1); }
+    50% { box-shadow: 0 0 40px rgba(255, 180, 0, 0.2); }
+}
+
+@keyframes border-glow {
+    0%, 100% { border-color: rgba(255, 180, 0, 0.2); }
+    50% { border-color: rgba(255, 180, 0, 0.5); }
+}
+
+@keyframes bar-grow {
+    from { width: 0; }
+    to { width: var(--bar-width, 78%); }
+}
+
+@keyframes count-up {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+/* ── SCROLL-TRIGGERED REVEAL CLASSES ── */
+/* Applied via IntersectionObserver in main.js */
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+        opacity 0.6s ease-out,
+        transform 0.6s ease-out,
+        filter 0.6s ease-out;
+    filter: blur(4px);
+}
+
+.reveal--visible {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+.reveal--left {
+    opacity: 0;
+    transform: translateX(-32px);
+}
+
+.reveal--right {
+    opacity: 0;
+    transform: translateX(32px);
+}
+
+.reveal--scale {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.reveal--left.reveal--visible,
+.reveal--right.reveal--visible,
+.reveal--scale.reveal--visible {
+    opacity: 1;
+    transform: translate(0) scale(1);
+}
+
+/* Stagger delays for child elements */
+.reveal-stagger > * {
+    opacity: 0;
+    transform: translateY(16px);
+    transition:
+        opacity 0.5s ease-out,
+        transform 0.5s ease-out;
+}
+
+.reveal-stagger--visible > *:nth-child(1) { transition-delay: 0ms; opacity: 1; transform: translateY(0); }
+.reveal-stagger--visible > *:nth-child(2) { transition-delay: 80ms; opacity: 1; transform: translateY(0); }
+.reveal-stagger--visible > *:nth-child(3) { transition-delay: 160ms; opacity: 1; transform: translateY(0); }
+.reveal-stagger--visible > *:nth-child(4) { transition-delay: 240ms; opacity: 1; transform: translateY(0); }
+.reveal-stagger--visible > *:nth-child(5) { transition-delay: 320ms; opacity: 1; transform: translateY(0); }
+.reveal-stagger--visible > *:nth-child(6) { transition-delay: 400ms; opacity: 1; transform: translateY(0); }
+
+/* ── HOVER EFFECTS ── */
+.hover-lift { transition: transform var(--ease-base); }
+.hover-lift:hover { transform: translateY(-4px); }
+
+.hover-glow { transition: box-shadow var(--ease-base); }
+.hover-glow:hover { box-shadow: 0 0 30px var(--amber-glow); }
+
+.hover-scale { transition: transform var(--ease-base); }
+.hover-scale:hover { transform: scale(1.03); }
+
+/* ── LOADING SKELETON ── */
+.skeleton {
+    background: linear-gradient(
+        90deg,
+        var(--bg-card) 25%,
+        var(--bg-elevated) 50%,
+        var(--bg-card) 75%
+    );
+    background-size: 400% 100%;
+    animation: shimmer 1.5s ease-in-out infinite;
+    border-radius: var(--radius-md);
+}
+
+/* ── REDUCED MOTION ── */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .reveal { opacity: 1; transform: none; filter: none; }
+    .reveal-stagger > * { opacity: 1; transform: none; }
+}

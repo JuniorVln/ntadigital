@@ -1,7 +1,38 @@
-# Briefing sensível - não enviar para repositório público
+# Briefing do cliente — não enviar para repositório público
 BRIEFING_NTA.pdf
 
-# Sistema operacional
+# Dependencies
+node_modules/
+.npm/
+
+# OS Files
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build
+dist/
+build/
+.cache/
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
+npm-debug.log*
+
+# Playwright MCP (gerado automaticamente pela ferramenta)
+.playwright-mcp/
+
+# Temp
+tmp/
+.tmp/
