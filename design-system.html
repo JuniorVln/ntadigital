@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTA Digital — Design System</title>
+    <meta name="description" content="Design System da NTA Digital — Agência de Marketing Digital especializada em tráfego pago.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="design-system.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════════
+         NAVIGATION
+    ═══════════════════════════════════════════ -->
+    <nav class="ds-nav" id="ds-nav">
+        <div class="ds-nav__brand">
+            <img src="https://ntadigital.com.br/wp-content/uploads/2026/02/NTA.aapng_-2.png" alt="NTA Digital" class="ds-nav__logo">
+        </div>
+        <div class="ds-nav__links">
+            <a href="#hero" class="ds-nav__link">Início</a>
+            <a href="#typography" class="ds-nav__link">Tipografia</a>
+            <a href="#colors" class="ds-nav__link">Cores</a>
+            <a href="#components" class="ds-nav__link">Componentes</a>
+            <a href="#layout" class="ds-nav__link">Layout</a>
+            <a href="#motion" class="ds-nav__link">Motion</a>
+            <a href="#icons" class="ds-nav__link">Ícones</a>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════
+         00 — HERO / HEADER
+    ═══════════════════════════════════════════ -->
+    <section class="ds-hero" id="hero">
+        <div class="ds-hero__bg">
+            <div class="ds-hero__unicorn" data-us-project="aH0ZsntZ1TcKHIyweEA8"></div>
+            <div class="ds-hero__beam"></div>
+            <div class="ds-hero__glow"></div>
+            <div class="ds-hero__rings"></div>
+        </div>
+        <div class="ds-container ds-hero__grid">
+            <div class="ds-hero__content">
+                <span class="ds-badge ds-badge--amber">
+                    <i data-lucide="zap" class="ds-icon--xs"></i>
+                    DESIGN SYSTEM v1.0
+                </span>
+                <h1 class="ds-hero__title">
+                    NTA <span class="ds-text--amber">Digital</span>
+                </h1>
+                <p class="ds-hero__desc">
+                    Sistema de Design da NTA Digital — Agência especializada em tráfego pago e marketing digital. Tokens, componentes e padrões visuais para garantir consistência em todas as interfaces.
+                </p>
+                <div class="ds-hero__actions">
+                    <a href="#typography" class="ds-btn ds-btn--primary">
+                        <i data-lucide="arrow-down" class="ds-icon--sm"></i>
+                        Explorar Sistema
+                    </a>
+                    <a href="#components" class="ds-btn ds-btn--ghost">Componentes</a>
+                </div>
+            </div>
+            <div class="ds-hero__showcase">
+                <div class="ds-card ds-card--glow">
+                    <div class="ds-card__header">
+                        <span class="ds-badge ds-badge--live">
+                            <span class="ds-pulse"></span>
+                            Campanha Ativa
+                        </span>
+                    </div>
+                    <div class="ds-hero__stat">
+                        <span class="ds-hero__stat-num ds-text--amber">+1000</span>
+                        <span class="ds-hero__stat-label">clientes atendidos</span>
+                    </div>
+                    <div class="ds-hero__metric-bar">
+                        <div class="ds-hero__metric-fill"></div>
+                    </div>
+                    <div class="ds-hero__meta">
+                        <div class="ds-meta-row">
+                            <i data-lucide="trending-up" class="ds-icon--xs ds-text--amber"></i>
+                            <span>ROAS médio: <strong class="ds-text--amber">4.2x</strong></span>
+                        </div>
+                        <div class="ds-meta-row">
+                            <i data-lucide="target" class="ds-icon--xs ds-text--amber"></i>
+                            <span>Conversão: <strong class="ds-text--amber">12.8%</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         01 — TYPOGRAPHY
+    ═══════════════════════════════════════════ -->
+    <section class="ds-section" id="typography">
+        <div class="ds-container">
+            <span class="ds-section__tag">01</span>
+            <h2 class="ds-section__title">Tipografia</h2>
+            <p class="ds-section__subtitle">Escala tipográfica, pesos e estilos usados em todo o sistema.</p>
+
+            <h3 class="ds-subsection-title">Fontes</h3>
+            <div class="ds-fonts-grid">
+                <div class="ds-font-card">
+                    <span class="ds-font-card__label">Heading</span>
+                    <span class="ds-font-card__name">Space Grotesk</span>
+                    <span class="ds-font-card__sample">Aa Bb Cc 123</span>
+                    <span class="ds-font-card__weights">300 · 400 · 500 · 600 · 700</span>
+                </div>
+                <div class="ds-font-card">
+                    <span class="ds-font-card__label">Body</span>
+                    <span class="ds-font-card__name">Inter</span>
+                    <span class="ds-font-card__sample">Aa Bb Cc 123</span>
+                    <span class="ds-font-card__weights">300 · 400 · 500 · 600 · 700 · 800</span>
+                </div>
+            </div>
+
+            <h3 class="ds-subsection-title">Escala</h3>
+
+            <div class="ds-type-row">
+                <span class="ds-type-label">DISPLAY</span>
+                <span class="ds-type-spec">Space Grotesk · 300 · 80/84px</span>
+                <div class="ds-type-sample ds-type--display">Aumente suas Vendas</div>
+            </div>
+            <div class="ds-type-row">
+                <span class="ds-type-label">HEADING 1</span>
+                <span class="ds-type-spec">Space Grotesk · 300 · 64/68px</span>
+                <div class="ds-type-sample ds-type--h1">Resultados Reais</div>
+            </div>
+            <div class="ds-type-row">
+                <span class="ds-type-label">HEADING 2</span>
+                <span class="ds-type-spec">Space Grotesk · 400 · 40/48px</span>
+                <div class="ds-type-sample ds-type--h2">Experiência Comprovada</div>
+            </div>
+            <div class="ds-type-row">
+                <span class="ds-type-label">HEADING 3</span>
+                <span class="ds-type-spec">Space Grotesk · 500 · 24/32px</span>
+                <div class="ds-type-sample ds-type--h3">Tráfego Pago Inteligente</div>
+            </div>
+            <div class="ds-type-row">
+                <span class="ds-type-label">HEADING 4</span>
+                <span class="ds-type-spec">Inter · 600 · 18/26px</span>
+                <div class="ds-type-sample ds-type--h4">Estratégia de Aquisição</div>
+            </div>
+            <div class="ds-type-row">
+                <span class="ds-type-label">BODY LARGE</span>
+                <span class="ds-type-spec">Inter · 400 · 18/28px</span>
+                <div class="ds-type-sample ds-type--body-lg">Criamos campanhas com foco em vendas, visitas ou reconhecimento de marca para e-commerces, produtores digitais e prestadores de serviços.</div>
+            </div>
+            <div class="ds-type-row">
+                <span class="ds-type-label">BODY</span>
+                <span class="ds-type-spec">Inter · 400 · 14/22px</span>
+                <div class="ds-type-sample ds-type--body">Apareça nas buscas do Google sempre que alguém pesquisar por você.</div>
+            </div>
+            <div class="ds-type-row">
+                <span class="ds-type-label">SMALL / CAPTION</span>
+                <span class="ds-type-spec">Inter · 500 · 12/16px</span>
+                <div class="ds-type-sample ds-type--sm">ASSESSORIA DIGITAL PARA SUA EMPRESA</div>
+            </div>
+
+            <h3 class="ds-subsection-title">Efeitos de Texto</h3>
+            <div class="ds-type-row">
+                <span class="ds-type-label">GRADIENT TEXT</span>
+                <div class="ds-type-sample ds-type--gradient">NTA Digital — Resultado Real</div>
+            </div>
+            <div class="ds-type-row">
+                <span class="ds-type-label">UPPERCASE BOLD</span>
+                <div class="ds-type-sample ds-type--uppercase">ESPECIALISTA EM TRÁFEGO PAGO</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         02 — COLORS & SURFACES
+    ═══════════════════════════════════════════ -->
+    <section class="ds-section" id="colors">
+        <div class="ds-container">
+            <span class="ds-section__tag">02</span>
+            <h2 class="ds-section__title">Cores & Superfícies</h2>
+            <p class="ds-section__subtitle">Paleta de cores, gradientes, bordas e tratamentos de superfície.</p>
+
+            <div class="ds-colors-grid">
+                <!-- Backgrounds -->
+                <div class="ds-color-group">
+                    <h4 class="ds-color-group__title">Fundos</h4>
+                    <div class="ds-color-swatch">
+                        <div class="ds-color-swatch__preview" style="--swatch: #080808"></div>
+                        <div class="ds-color-swatch__info">
+                            <strong>#080808</strong>
+                            <span>Primary</span>
+                        </div>
+                    </div>
+                    <div class="ds-color-swatch">
+                        <div class="ds-color-swatch__preview" style="--swatch: #0F0F0F"></div>
+                        <div class="ds-color-swatch__info">
+                            <strong>#0F0F0F</strong>
+                            <span>Card</span>
+                        </div>
+                    </div>
+                    <div class="ds-color-swatch">
+                        <div class="ds-color-swatch__preview" style="--swatch: #161616"></div>
+                        <div class="ds-color-swatch__info">
+                            <strong>#161616</strong>
+                            <span>Surface</span>
+                        </div>
+                    </div>
+                    <div class="ds-color-swatch">
+                        <div class="ds-color-swatch__preview" style="--swatch: #1E1E1E"></div>
+                        <div class="ds-color-swatch__info">
+                            <strong>#1E1E1E</strong>
+                            <span>Elevated</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Colors -->
+                <div class="ds-color-group">
+                    <h4 class="ds-color-group__title">Textos</h4>
+                    <div class="ds-color-swatch">
+                        <div class="ds-color-swatch__preview" style="--swatch: #FFFFFF"></div>
+                        <div class="ds-color-swatch__info">
+                            <strong>#FFFFFF</strong>
+                            <span>Primary</span>
+                        </div>
+                    </div>
+                    <div class="ds-color-swatch">
+                        <div class="ds-color-swatch__preview" style="--swatch: #A0A0A0"></div>
+                        <div class="ds-color-swatch__info">
+                            <strong>#A0A0A0</strong>
+                            <span>Secondary</span>
+                        </div>
+                    </div>
+                    <div class="ds-color-swatch">
+                        <div class="ds-color-swatch__preview" style="--swatch: #5A5A5A"></div>
+                        <div class="ds-color-swatch__info">
+                            <strong>#5A5A5A</strong>
+                            <span>Tertiary</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accent Colors -->
+                <div class="ds-color-group">
+                    <h4 class="ds-color-group__title">Accent (Âmbar)</h4>
+                    <div class="ds-color-swatch">
+                        <div class="ds-color-swatch__preview" style="--swatch: #FFB400"></div>
+                        <div class="ds-color-swatch__info">
+                            <strong>#FFB400</strong>
+                            <span>Primary — CTA / Destaque</span>
+                        </div>
+                    </div>
+                    <div class="ds-color-swatch">
+                        <div class="ds-color-swatch__preview" style="--swatch: #FFD54F"></div>
+                        <div class="ds-color-swatch__info">
+                            <strong>#FFD54F</strong>
+                            <span>Light — Hover</span>
+                        </div>
+                    </div>
+                    <div class="ds-color-swatch">
+                        <div class="ds-color-swatch__preview" style="--swatch: #E6A200"></div>
+                        <div class="ds-color-swatch__info">
+                            <strong>#E6A200</strong>
+                            <span>Dark — Active</span>
+                        </div>
+                    </div>
+                    <div class="ds-color-swatch">
+                        <div class="ds-color-swatch__preview" style="--swatch: #25D366"></div>
+                        <div class="ds-color-swatch__info">
+                            <strong>#25D366</strong>
+                            <span>WhatsApp CTA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="ds-subsection-title">Gradientes</h3>
+            <div class="ds-gradients-grid">
+                <div class="ds-gradient-item">
+                    <div class="ds-gradient-swatch" style="background: linear-gradient(135deg, #FFB400, #FFD54F)"></div>
+                    <span class="ds-gradient-label">Yellow → Light</span>
+                </div>
+                <div class="ds-gradient-item">
+                    <div class="ds-gradient-swatch" style="background: linear-gradient(135deg, #E6A200, #FFB400)"></div>
+                    <span class="ds-gradient-label">Dark → Yellow</span>
+                </div>
+                <div class="ds-gradient-item">
+                    <div class="ds-gradient-swatch" style="background: linear-gradient(135deg, #FFB400, #FF9800)"></div>
+                    <span class="ds-gradient-label">Yellow → Amber</span>
+                </div>
+                <div class="ds-gradient-item">
+                    <div class="ds-gradient-swatch" style="background: linear-gradient(180deg, #0F0F0F, #080808)"></div>
+                    <span class="ds-gradient-label">Card Fade</span>
+                </div>
+            </div>
+
+            <h3 class="ds-subsection-title">Bordas & Superfícies</h3>
+            <div class="ds-borders-grid">
+                <div class="ds-border-swatch ds-border-swatch--subtle">
+                    <strong>Subtle</strong>
+                    <span>rgba(255,255,255, 0.06)</span>
+                </div>
+                <div class="ds-border-swatch ds-border-swatch--standard">
+                    <strong>Standard</strong>
+                    <span>rgba(255,255,255, 0.10)</span>
+                </div>
+                <div class="ds-border-swatch ds-border-swatch--amber">
+                    <strong>Amber Glow</strong>
+                    <span>rgba(255,180,0, 0.4)</span>
+                </div>
+                <div class="ds-border-swatch ds-border-swatch--glass">
+                    <strong>Glass Surface</strong>
+                    <span>backdrop-filter: blur(20px)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         03 — UI COMPONENTS
+    ═══════════════════════════════════════════ -->
+    <section class="ds-section" id="components">
+        <div class="ds-container">
+            <span class="ds-section__tag">03</span>
+            <h2 class="ds-section__title">Componentes UI</h2>
+            <p class="ds-section__subtitle">Componentes interativos e seus estados.</p>
+
+            <h3 class="ds-subsection-title">Botões</h3>
+            <div class="ds-component-row">
+                <a class="ds-btn ds-btn--primary" href="#">
+                    <i data-lucide="zap" class="ds-icon--sm"></i>
+                    Solicitar Orçamento
+                </a>
+                <a class="ds-btn ds-btn--whatsapp" href="#">
+                    <i data-lucide="message-circle" class="ds-icon--sm"></i>
+                    WhatsApp
+                </a>
+                <a class="ds-btn ds-btn--secondary" href="#">Secondary</a>
+                <a class="ds-btn ds-btn--ghost" href="#">Ghost</a>
+                <a class="ds-btn ds-btn--text" href="#">
+                    Text Link
+                    <i data-lucide="arrow-right" class="ds-icon--sm"></i>
+                </a>
+            </div>
+            <div class="ds-component-row" style="margin-top: 24px;">
+                <a class="ds-btn ds-btn--primary ds-btn--sm" href="#">Small</a>
+                <a class="ds-btn ds-btn--primary" href="#">Medium</a>
+                <a class="ds-btn ds-btn--primary ds-btn--lg" href="#">Large</a>
+                <button class="ds-btn ds-btn--icon">
+                    <i data-lucide="arrow-up-right"></i>
+                </button>
+            </div>
+
+            <h3 class="ds-subsection-title">Cards</h3>
+            <div class="ds-cards-grid">
+                <div class="ds-card ds-card--standard">
+                    <div class="ds-card__icon-wrap">
+                        <i data-lucide="search" class="ds-text--amber"></i>
+                    </div>
+                    <h4>Pesquisa Google</h4>
+                    <p>Apareça nas buscas do Google sempre que alguém pesquisar por você.</p>
+                </div>
+                <div class="ds-card ds-card--glow">
+                    <div class="ds-card__icon-wrap">
+                        <i data-lucide="shopping-cart" class="ds-text--amber"></i>
+                    </div>
+                    <h4>E-commerce</h4>
+                    <p>Anuncie seus produtos no topo da pesquisa do Google Shopping.</p>
+                </div>
+                <div class="ds-card ds-card--standard">
+                    <div class="ds-card__icon-wrap">
+                        <i data-lucide="play-circle" class="ds-text--amber"></i>
+                    </div>
+                    <h4>Vídeo / YouTube</h4>
+                    <p>Alcance mais pessoas com campanhas e anúncios de vídeo.</p>
+                </div>
+                <div class="ds-card ds-card--standard">
+                    <div class="ds-card__icon-wrap">
+                        <i data-lucide="layout" class="ds-text--amber"></i>
+                    </div>
+                    <h4>Display</h4>
+                    <p>Apareça em diversos sites com anúncios de imagens atraentes.</p>
+                </div>
+            </div>
+
+            <h3 class="ds-subsection-title">Step Card (Processo)</h3>
+            <div class="ds-steps-grid">
+                <div class="ds-step-card">
+                    <span class="ds-step-card__number">01</span>
+                    <h4>Diagnóstico de Oportunidade</h4>
+                    <p>Identificamos onde sua empresa está deixando dinheiro na mesa.</p>
+                </div>
+                <div class="ds-step-card">
+                    <span class="ds-step-card__number">02</span>
+                    <h4>Estratégia de Aquisição</h4>
+                    <p>Criamos um plano focado em atrair clientes prontos para comprar.</p>
+                </div>
+                <div class="ds-step-card">
+                    <span class="ds-step-card__number">03</span>
+                    <h4>Execução e Escala</h4>
+                    <p>Campanhas ativas, otimização contínua e crescimento previsível.</p>
+                </div>
+            </div>
+
+            <h3 class="ds-subsection-title">Inputs</h3>
+            <div class="ds-inputs-grid">
+                <div class="ds-input-wrapper">
+                    <i data-lucide="user" class="ds-input-icon"></i>
+                    <input type="text" class="ds-input" placeholder="Seu nome completo">
+                </div>
+                <div class="ds-input-wrapper">
+                    <i data-lucide="mail" class="ds-input-icon"></i>
+                    <input type="email" class="ds-input" placeholder="seuemail@empresa.com">
+                    <button class="ds-btn ds-btn--submit">Enviar</button>
+                </div>
+                <div class="ds-input-wrapper">
+                    <i data-lucide="phone" class="ds-input-icon"></i>
+                    <input type="tel" class="ds-input" placeholder="(41) 99999-9999">
+                </div>
+                <div class="ds-textarea-wrapper">
+                    <textarea class="ds-textarea" placeholder="Como posso te ajudar?" rows="3"></textarea>
+                </div>
+            </div>
+
+            <h3 class="ds-subsection-title">Badges</h3>
+            <div class="ds-component-row">
+                <span class="ds-badge ds-badge--amber">
+                    <i data-lucide="zap" class="ds-icon--xs"></i>
+                    Novo
+                </span>
+                <span class="ds-badge ds-badge--live">
+                    <span class="ds-pulse"></span>
+                    Campanha Ativa
+                </span>
+                <span class="ds-badge ds-badge--success">
+                    <i data-lucide="check" class="ds-icon--xs"></i>
+                    Verificado
+                </span>
+                <span class="ds-badge ds-badge--neutral">Google Ads</span>
+                <span class="ds-badge ds-badge--neutral">Meta Ads</span>
+                <span class="ds-badge ds-badge--neutral">YouTube</span>
+            </div>
+
+            <h3 class="ds-subsection-title">FAQ / Accordion</h3>
+            <div class="ds-faq-list">
+                <details class="ds-faq-item" open>
+                    <summary class="ds-faq-question">
+                        Quanto tempo leva para ver resultado?
+                        <i data-lucide="chevron-down" class="ds-faq-icon"></i>
+                    </summary>
+                    <div class="ds-faq-answer">
+                        O tempo para ver resultados com Google Ads pode variar dependendo do tipo de campanha, orçamento, concorrência e eficácia das estratégias.
+                    </div>
+                </details>
+                <details class="ds-faq-item">
+                    <summary class="ds-faq-question">
+                        Preciso de um site para anunciar no Google?
+                        <i data-lucide="chevron-down" class="ds-faq-icon"></i>
+                    </summary>
+                    <div class="ds-faq-answer">
+                        Sim, pois a função do Google Ads é gerar resultado. É necessário levar o usuário para uma página de destino de acordo com o objetivo do anunciante.
+                    </div>
+                </details>
+                <details class="ds-faq-item">
+                    <summary class="ds-faq-question">
+                        Qual o valor mínimo de investimento?
+                        <i data-lucide="chevron-down" class="ds-faq-icon"></i>
+                    </summary>
+                    <div class="ds-faq-answer">
+                        Na assessoria estaremos realizando uma análise e orientando você com base nas informações da sua empresa.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         04 — LAYOUT & SPACING
+    ═══════════════════════════════════════════ -->
+    <section class="ds-section" id="layout">
+        <div class="ds-container">
+            <span class="ds-section__tag">04</span>
+            <h2 class="ds-section__title">Layout & Espaçamento</h2>
+            <p class="ds-section__subtitle">Grids, containers e escala de espaçamento baseada em 8px.</p>
+
+            <h3 class="ds-subsection-title">Container</h3>
+            <div class="ds-layout-demo ds-layout-demo--container">
+                max-width: 1200px · padding: 0 24px · margin: 0 auto
+            </div>
+
+            <h3 class="ds-subsection-title">Grid Principal</h3>
+            <div class="ds-layout-demo ds-layout-demo--grid">
+                <div class="ds-layout-col">Conteúdo — 7 colunas (58%)</div>
+                <div class="ds-layout-col">Sidebar / Visual — 5 colunas (42%)</div>
+            </div>
+
+            <h3 class="ds-subsection-title">Grid de Cards</h3>
+            <div class="ds-layout-demo ds-layout-demo--cards-grid">
+                <div class="ds-layout-col">1/3</div>
+                <div class="ds-layout-col">1/3</div>
+                <div class="ds-layout-col">1/3</div>
+            </div>
+
+            <h3 class="ds-subsection-title">Escala de Espaçamento</h3>
+            <div class="ds-spacing-list">
+                <div class="ds-spacing-item">
+                    <div class="ds-spacing-dot" style="--dot-size: 4px"></div>
+                    <span>4px — $space-1</span>
+                </div>
+                <div class="ds-spacing-item">
+                    <div class="ds-spacing-dot" style="--dot-size: 8px"></div>
+                    <span>8px — $space-2</span>
+                </div>
+                <div class="ds-spacing-item">
+                    <div class="ds-spacing-dot" style="--dot-size: 12px"></div>
+                    <span>12px — $space-3</span>
+                </div>
+                <div class="ds-spacing-item">
+                    <div class="ds-spacing-dot" style="--dot-size: 16px"></div>
+                    <span>16px — $space-4</span>
+                </div>
+                <div class="ds-spacing-item">
+                    <div class="ds-spacing-dot" style="--dot-size: 24px"></div>
+                    <span>24px — $space-6</span>
+                </div>
+                <div class="ds-spacing-item">
+                    <div class="ds-spacing-dot" style="--dot-size: 32px"></div>
+                    <span>32px — $space-8</span>
+                </div>
+                <div class="ds-spacing-item">
+                    <div class="ds-spacing-dot" style="--dot-size: 48px"></div>
+                    <span>48px — $space-12</span>
+                </div>
+                <div class="ds-spacing-item">
+                    <div class="ds-spacing-dot" style="--dot-size: 64px"></div>
+                    <span>64px — $space-16</span>
+                </div>
+                <div class="ds-spacing-item">
+                    <div class="ds-spacing-dot" style="--dot-size: 96px"></div>
+                    <span>96px — $space-24</span>
+                </div>
+            </div>
+
+            <h3 class="ds-subsection-title">Border Radius</h3>
+            <div class="ds-radius-grid">
+                <div class="ds-radius-item" style="border-radius: 6px"><span>6px — sm</span></div>
+                <div class="ds-radius-item" style="border-radius: 12px"><span>12px — md</span></div>
+                <div class="ds-radius-item" style="border-radius: 16px"><span>16px — lg</span></div>
+                <div class="ds-radius-item" style="border-radius: 24px"><span>24px — xl</span></div>
+                <div class="ds-radius-item" style="border-radius: 999px"><span>full</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         05 — MOTION & INTERACTION
+    ═══════════════════════════════════════════ -->
+    <section class="ds-section" id="motion">
+        <div class="ds-container">
+            <span class="ds-section__tag">05</span>
+            <h2 class="ds-section__title">Motion & Interação</h2>
+            <p class="ds-section__subtitle">Curvas de easing, durações e animações do sistema.</p>
+
+            <h3 class="ds-subsection-title">Curvas</h3>
+            <div class="ds-motion-grid">
+                <div class="ds-motion-card">
+                    <strong>ease-out</strong>
+                    <span>Entradas de elementos — 300ms</span>
+                    <div class="ds-motion-preview ds-motion-preview--ease-out"></div>
+                </div>
+                <div class="ds-motion-card">
+                    <strong>ease-in-out</strong>
+                    <span>Transições de estado — 200ms</span>
+                    <div class="ds-motion-preview ds-motion-preview--ease-in-out"></div>
+                </div>
+                <div class="ds-motion-card">
+                    <strong>cubic-bezier</strong>
+                    <span>0.16, 1, 0.3, 1 — Bounce suave</span>
+                    <div class="ds-motion-preview ds-motion-preview--bounce"></div>
+                </div>
+            </div>
+
+            <h3 class="ds-subsection-title">Animações</h3>
+            <div class="ds-anim-demo">
+                <button class="ds-btn ds-btn--ghost" id="ds-replay-anim" onclick="replayAnimations()">
+                    <i data-lucide="play" class="ds-icon--sm"></i>
+                    Replay
+                </button>
+                <div class="ds-anim-row" id="ds-anim-container">
+                    <div class="ds-anim-box ds-anim-fadeUp" style="animation-delay: 0s">fadeUp</div>
+                    <div class="ds-anim-box ds-anim-fadeUp" style="animation-delay: 0.15s">stagger 1</div>
+                    <div class="ds-anim-box ds-anim-fadeUp" style="animation-delay: 0.3s">stagger 2</div>
+                    <div class="ds-anim-box ds-anim-scaleIn" style="animation-delay: 0.45s">scaleIn</div>
+                </div>
+            </div>
+
+            <h3 class="ds-subsection-title">Hover States</h3>
+            <div class="ds-component-row">
+                <div class="ds-hover-demo ds-hover-demo--lift">Lift (translateY -4px)</div>
+                <div class="ds-hover-demo ds-hover-demo--glow">Glow (box-shadow amber)</div>
+                <div class="ds-hover-demo ds-hover-demo--scale">Scale (1.03)</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         06 — ICONS
+    ═══════════════════════════════════════════ -->
+    <section class="ds-section" id="icons">
+        <div class="ds-container">
+            <span class="ds-section__tag">06</span>
+            <h2 class="ds-section__title">Ícones</h2>
+            <p class="ds-section__subtitle">Sistema de ícones Lucide com variantes de tamanho e cor.</p>
+
+            <h3 class="ds-subsection-title">Tamanhos</h3>
+            <div class="ds-icon-sizes">
+                <div class="ds-icon-size-item">
+                    <i data-lucide="star" style="width:14px;height:14px"></i>
+                    <span>14px — xs (badges, inline)</span>
+                </div>
+                <div class="ds-icon-size-item">
+                    <i data-lucide="star" style="width:18px;height:18px"></i>
+                    <span>18px — sm (botões)</span>
+                </div>
+                <div class="ds-icon-size-item">
+                    <i data-lucide="star" style="width:24px;height:24px"></i>
+                    <span>24px — md (padrão)</span>
+                </div>
+                <div class="ds-icon-size-item">
+                    <i data-lucide="star" style="width:32px;height:32px"></i>
+                    <span>32px — lg (cards)</span>
+                </div>
+            </div>
+
+            <h3 class="ds-subsection-title">Cores</h3>
+            <div class="ds-icon-colors">
+                <i data-lucide="star" style="width:24px;height:24px;color:#FFFFFF"></i>
+                <i data-lucide="star" style="width:24px;height:24px;color:#A0A0A0"></i>
+                <i data-lucide="star" style="width:24px;height:24px;color:#FFB400"></i>
+                <i data-lucide="star" style="width:24px;height:24px;color:#FFD54F"></i>
+                <i data-lucide="star" style="width:24px;height:24px;color:#25D366"></i>
+            </div>
+
+            <h3 class="ds-subsection-title">Ícones Comuns (NTA)</h3>
+            <div class="ds-icon-common">
+                <div class="ds-icon-item" title="search"><i data-lucide="search"></i><span>search</span></div>
+                <div class="ds-icon-item" title="shopping-cart"><i data-lucide="shopping-cart"></i><span>cart</span></div>
+                <div class="ds-icon-item" title="play-circle"><i data-lucide="play-circle"></i><span>video</span></div>
+                <div class="ds-icon-item" title="layout"><i data-lucide="layout"></i><span>display</span></div>
+                <div class="ds-icon-item" title="smartphone"><i data-lucide="smartphone"></i><span>apps</span></div>
+                <div class="ds-icon-item" title="target"><i data-lucide="target"></i><span>target</span></div>
+                <div class="ds-icon-item" title="trending-up"><i data-lucide="trending-up"></i><span>growth</span></div>
+                <div class="ds-icon-item" title="zap"><i data-lucide="zap"></i><span>zap</span></div>
+                <div class="ds-icon-item" title="bar-chart-2"><i data-lucide="bar-chart-2"></i><span>chart</span></div>
+                <div class="ds-icon-item" title="check-circle"><i data-lucide="check-circle"></i><span>check</span></div>
+                <div class="ds-icon-item" title="message-circle"><i data-lucide="message-circle"></i><span>chat</span></div>
+                <div class="ds-icon-item" title="mail"><i data-lucide="mail"></i><span>email</span></div>
+                <div class="ds-icon-item" title="phone"><i data-lucide="phone"></i><span>phone</span></div>
+                <div class="ds-icon-item" title="user"><i data-lucide="user"></i><span>user</span></div>
+                <div class="ds-icon-item" title="arrow-right"><i data-lucide="arrow-right"></i><span>arrow</span></div>
+                <div class="ds-icon-item" title="external-link"><i data-lucide="external-link"></i><span>link</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         FOOTER
+    ═══════════════════════════════════════════ -->
+    <footer class="ds-footer">
+        <div class="ds-container">
+            <div class="ds-footer__inner">
+                <span>NTA Digital — Design System v1.0</span>
+                <span class="ds-text--muted">Preto & Âmbar · Space Grotesk + Inter · Lucide Icons</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => { lucide.createIcons(); });
+
+        function replayAnimations() {
+            const container = document.getElementById('ds-anim-container');
+            const boxes = container.querySelectorAll('.ds-anim-box');
+            boxes.forEach(box => {
+                box.style.animation = 'none';
+                box.offsetHeight;
+                box.style.animation = '';
+            });
+        }
+    </script>
+
+    <!-- Unicorn Studio Animation -->
+    <script type="text/javascript">
+        !function(){var u=window.UnicornStudio;if(u&&u.init){if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",function(){u.init()})}else{u.init()}}else{window.UnicornStudio={isInitialized:!1};var i=document.createElement("script");i.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v2.1.1/dist/unicornStudio.umd.js",i.onload=function(){if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",function(){UnicornStudio.init()})}else{UnicornStudio.init()}},(document.head||document.body).appendChild(i)}}();
+    </script>
+</body>
+</html>
