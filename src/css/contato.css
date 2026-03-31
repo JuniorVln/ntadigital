@@ -101,8 +101,9 @@
    CONTACT CARDS (Light Section)
    ═══════════════════════════════════════ */
 .c-contact-cards {
-    padding: 0 0 var(--space-24);
+    padding: var(--space-12) 0 var(--space-24);
     background: #f5f5f5;
+    margin-top: var(--space-8);
 }
 
 .c-contact-cards__grid {
