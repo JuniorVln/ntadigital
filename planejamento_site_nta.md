@@ -38,7 +38,7 @@ graph TD
     HOME --> BLOG
     HOME --> CONTATO
 
-    style GERAR fill:#f9d71c,stroke:#333,stroke-width:2px
+    style GERAR fill:#f9d71c,stroke:#333,stroke-width:2px,color:#000
 ```
 
 | Página | Slug | Prioridade | Objetivo Principal |
@@ -427,7 +427,7 @@ graph LR
     F3 --> F4[Fase 4: Blog & SEO]
     F4 --> F5[Fase 5: Integrações & QA]
 
-    subgraph "Sprints"
+    subgraph Sprints
     F1
     F2
     F3
