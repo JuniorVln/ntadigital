@@ -367,19 +367,23 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 6px;
-    padding: 20px 28px;
-    background: rgba(255, 255, 255, 0.09);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    border-radius: 14px;
-    transition: background 0.2s ease, border-color 0.2s ease;
+    gap: 10px;
+    padding: 24px 32px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 2px solid rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .h-hero__stat:hover {
-    background: rgba(255, 255, 255, 0.13);
-    border-color: rgba(255, 255, 255, 0.22);
+    background: rgba(255, 255, 255, 0.18);
+    border-color: #fff;
+    transform: translateY(-4px);
 }
 
 .h-hero__stat-val {
@@ -658,15 +662,15 @@
 }
 
 .h-service-card {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
     border-radius: 20px;
     padding: 40px 36px;
-    border: 1.5px solid rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.9);
     box-shadow: 
-        0 8px 32px rgba(0, 0, 0, 0.05),
-        inset 0 1px 1px rgba(255, 255, 255, 0.3);
+        0 12px 40px rgba(0, 0, 0, 0.06),
+        inset 0 1px 1px rgba(255, 255, 255, 0.4);
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     cursor: default;
     position: relative;
@@ -917,16 +921,16 @@
     position: absolute;
     bottom: -36px;
     right: -40px;
-    /* Glassmorphism */
-    background: rgba(255, 255, 255, 0.18);
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
-    border: 2.5px solid rgba(255, 255, 255, 0.85);
+    /* Glassmorphism Print 2 */
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 2px solid rgba(255, 255, 255, 0.9);
     border-radius: 20px;
     padding: 28px 36px;
     box-shadow:
-        0 8px 32px rgba(0, 0, 0, 0.18),
-        inset 0 1px 0 rgba(255, 255, 255, 0.25);
+        0 12px 42px rgba(0, 0, 0, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
     text-align: center;
 }
 
