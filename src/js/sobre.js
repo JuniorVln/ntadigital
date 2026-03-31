@@ -78,7 +78,7 @@
     // ANIMATION ON SCROLL (Simple)
     // ═══════════════════════════════════════
     function initScrollReveal() {
-        const revealElements = document.querySelectorAll('.s-history__content, .s-history__image-wrap, .s-number-card, .s-value-card');
+        const revealElements = document.querySelectorAll('.s-history__content, .s-history__image-wrap, .s-number-card, .s-value-card, .s-method-step');
         
         if (!('IntersectionObserver' in window)) {
             // Fallback: show everything
