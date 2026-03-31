@@ -1347,17 +1347,12 @@
 }
 
 @media (max-width: 768px) {
-    .h-hero {
-        min-height: auto;
-        padding-bottom: 60px;
-    }
-
     .h-hero__grid {
         padding: 60px 0 40px;
     }
 
     .h-hero__title {
-        font-size: clamp(40px, 10vw, 56px);
+        font-size: clamp(36px, 9vw, 52px);
     }
 
     .h-hero__actions {
@@ -1446,14 +1441,37 @@
 
     /* ── HERO MOBILE ── */
     .h-hero {
-        height: auto;
-        min-height: 100vh;
+        height: auto !important;
+        min-height: unset !important;
+        overflow: visible; /* Permite que conteúdo relativo flua naturalmente */
         justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    /* Overlay cobre a tela inteira no mobile */
+    .h-hero__overlay {
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.82) 0%,
+            rgba(0, 0, 0, 0.72) 55%,
+            rgba(0, 0, 0, 0.60) 100%
+        );
+    }
+
+    /* Background centralizado no topo para fotos verticais */
+    .h-hero__bg {
+        background-position: center top;
+        /* Limita o bg à altura do conteúdo hero, não ao viewport inteiro */
+        height: 100%;
+        min-height: 100%;
     }
 
     .h-hero__container {
+        flex: none; /* Não expande para preencher 100vh */
+        position: relative;
+        z-index: 2;
         padding-top: calc(var(--nav-height) + 24px);
-        padding-bottom: 80px;
+        padding-bottom: 24px;
     }
 
     .h-hero__title {
@@ -1518,24 +1536,29 @@
         font-size: 11px;
     }
 
-    /* Stats bar mobile */
+    /* Stats bar mobile — sai do fluxo absoluto e vira relativo */
     .h-hero__stats-bar {
         position: relative;
         bottom: auto;
-        margin-top: 40px;
+        z-index: 3;
+        margin-top: 16px;
+        padding-bottom: 32px;
     }
 
     .h-hero__stats-row {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: 10px;
         max-width: 100%;
     }
 
     .h-hero__stat {
-        padding: 16px 20px;
-        flex-direction: row;
-        align-items: center;
-        gap: 12px;
+        flex: 1 1 calc(50% - 5px);
+        min-width: 0;
+        padding: 16px 18px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
     }
 
     .h-hero__stat-val {
@@ -1584,37 +1607,49 @@
 
     /* ── STATS SECTION MOBILE ── */
     .h-stats {
-        padding: 60px 0;
+        padding: 56px 0;
     }
 
     .h-stats__grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 0;
     }
 
     .h-stat {
-        padding: 24px 0;
-        border-right: none;
+        padding: 28px 20px;
+        border-right: 1px solid rgba(0, 0, 0, 0.07);
         border-bottom: 1px solid rgba(0, 0, 0, 0.07);
     }
 
-    .h-stat:last-child {
+    .h-stat:nth-child(2n) {
+        border-right: none;
+    }
+
+    .h-stat:nth-last-child(-n+2) {
         border-bottom: none;
+    }
+
+    .h-stat:first-child {
+        padding-left: 0;
+    }
+
+    .h-stat:nth-child(2) {
+        padding-left: 20px;
     }
 
     .h-stat__line {
         width: 32px;
         height: 2px;
-        margin-bottom: 16px;
+        margin-bottom: 14px;
     }
 
     .h-stat__num {
-        font-size: 40px;
+        font-size: 36px;
         margin-bottom: 6px;
     }
 
     .h-stat__label {
-        font-size: 13px;
+        font-size: 12px;
         max-width: 100%;
         line-height: 1.5;
     }
@@ -1737,24 +1772,34 @@
     }
 
     .h-about__grid {
-        gap: 40px;
+        gap: 0;
     }
 
     .h-about__photo {
         border-radius: 16px;
+        aspect-ratio: 3/2;
     }
 
     .h-about__image-badge {
         position: relative;
         bottom: auto;
         right: auto;
-        margin-top: -40px;
-        margin-left: 16px;
-        padding: 20px 28px;
+        margin-top: -32px;
+        margin-left: auto;
+        margin-right: 0;
+        padding: 18px 24px;
+        display: inline-block;
+        float: right;
+    }
+
+    .h-about__image::after {
+        content: '';
+        display: table;
+        clear: both;
     }
 
     .h-about__image-badge-num {
-        font-size: 36px;
+        font-size: 32px;
         margin-bottom: 4px;
     }
 
@@ -1764,6 +1809,12 @@
 
     .h-about__content {
         padding-right: 0;
+        padding-top: 36px;
+    }
+
+    /* Evita overflow de white-space: nowrap no título */
+    .h-about__content .h-section-title span {
+        white-space: normal;
     }
 
     .h-about__list {
@@ -1811,9 +1862,7 @@
     .h-testimonials__columns {
         grid-template-columns: 1fr;
         height: auto;
-        max-height: 500px;
-        overflow-y: auto;
-        -webkit-overflow-scrolling: touch;
+        overflow: visible;
         mask-image: none;
         -webkit-mask-image: none;
     }
@@ -1826,8 +1875,14 @@
         display: block;
     }
 
+    /* Para animação: desabilita e mostra só os primeiros 3 cards (não duplicatas) */
     .h-testi-col--up .h-testi-col__track {
         animation: none;
+    }
+
+    /* Oculta os cards duplicados (4º, 5º, 6º) */
+    .h-testi-col:first-child .h-testi-col__track > .h-testi-card:nth-child(n+4) {
+        display: none;
     }
 
     .h-testi-card {
@@ -1943,8 +1998,13 @@
     }
 
     /* Stats bar compacta */
+    .h-hero__stats-row {
+        gap: 8px;
+    }
+
     .h-hero__stat {
-        padding: 14px 16px;
+        padding: 14px 14px;
+        flex: 1 1 calc(50% - 4px);
     }
 
     .h-hero__stat-val {
@@ -1986,12 +2046,12 @@
 
     /* About badge menor */
     .h-about__image-badge {
-        padding: 16px 20px;
-        margin-left: 12px;
+        padding: 14px 18px;
+        margin-top: -28px;
     }
 
     .h-about__image-badge-num {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .h-about__image-badge-label {
