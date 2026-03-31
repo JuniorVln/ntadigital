@@ -108,3 +108,59 @@
 | **Campos** | Nome, Email, Telefone, Empresa, Mensagem, Botão enviar |
 | **Integração** | FormSubmit or Contact Form 7 |
 | **Componentes DS** | `.ds-input-wrapper`, `.ds-textarea-wrapper`, `.ds-btn--primary` |
+
+---
+
+## Seções Complementares Identificadas na Home Atual
+
+### Seção 1.10 — Faixa de Plataformas / Credibilidade Operacional
+| Item | Detalhe |
+|------|---------|
+| **Posição sugerida** | Logo após o Hero Principal |
+| **Propósito** | Reforçar autoridade logo no início e mostrar presença ativa nos principais canais de mídia |
+| **Conteúdo** | Faixa horizontal com label "Campanhas ativas em" + plataformas: Meta Ads, Google Ads, YouTube Ads, LinkedIn Ads, TikTok Ads e Analytics |
+| **Comportamento** | Marquee contínuo em desktop e adaptação estática ou scrollável no mobile |
+| **Tom** | Mostrar domínio dos canais sem transformar a comunicação em algo técnico |
+| **Componentes DS** | Faixa horizontal custom com ícones + labels curtas |
+
+### Seção 1.11 — Números em Destaque
+| Item | Detalhe |
+|------|---------|
+| **Posição sugerida** | Após a faixa de plataformas e antes da seção de serviços |
+| **Propósito** | Validar a autoridade da marca com prova social objetiva e rápida de consumir |
+| **Layout** | Grid com 4 indicadores de destaque |
+| **Métrica 1** | `+1000 empresas atendidas em todo o Brasil` |
+| **Métrica 2** | `+R$15M em receita gerada para clientes` |
+| **Métrica 3** | `98% de satisfação dos clientes atendidos` |
+| **Métrica 4** | `+5 anos de experiência no mercado digital` |
+| **Animação** | Counter up ao entrar na viewport |
+| **Componentes DS** | Blocos numéricos com alto contraste e destaque tipográfico |
+
+### Seção 1.12 — Diferenciais / Por Que a NTA Digital
+| Item | Detalhe |
+|------|---------|
+| **Posição sugerida** | Entre a seção de processo e a seção de prova social |
+| **Propósito** | Explicar por que escolher a NTA, reforçando confiança, proximidade e visão de parceria |
+| **Layout** | 2 colunas — imagem institucional/equipe + conteúdo com lista de diferenciais |
+| **Título principal** | "Não vendemos serviço. Entregamos crescimento." |
+| **Texto de apoio** | Reforçar que a NTA transforma investimento em marketing digital em clientes, vendas e crescimento concreto |
+| **Diferencial 1** | Gestão de campanhas com foco em ROI positivo desde a primeira semana |
+| **Diferencial 2** | Relatórios claros e transparentes |
+| **Diferencial 3** | Equipe especializada com mais de 5 anos de experiência |
+| **Diferencial 4** | Atendimento dedicado, com proximidade ao negócio do cliente |
+| **CTA** | "Conhecer a equipe" → página Sobre |
+| **Componentes DS** | Seção institucional com imagem + checklist de diferenciais + badge de prova social |
+
+### Seção 1.13 — CTA Curto de Fechamento
+| Item | Detalhe |
+|------|---------|
+| **Posição sugerida** | Após a prova social e antes do footer |
+| **Propósito** | Capturar o lead no momento de maior intenção com uma chamada direta, sem depender apenas do formulário |
+| **Label** | "Pronto para crescer?" |
+| **Título principal** | "Vamos transformar seu negócio juntos" |
+| **Subtítulo** | Convite direto para falar com um especialista e entender como gerar mais clientes e vendas |
+| **CTA 1** | Botão principal WhatsApp → "Falar no WhatsApp — É Grátis" |
+| **CTA 2** | Botão secundário → "Ligar agora" |
+| **Texto de apoio** | "Diagnóstico gratuito · Sem compromisso · Resposta em até 2h" |
+| **Observação** | Pode coexistir com a seção 1.9 como pré-CTA de fechamento ou substituir o formulário em versões mais enxutas da home |
+| **Componentes DS** | Bloco CTA de alto contraste + botões primário/secundário + nota de confiança |

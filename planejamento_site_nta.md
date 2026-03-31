@@ -19,15 +19,26 @@
 
 ## Visão Geral da Arquitetura
 
-```
-HOME (/)
-├── SERVIÇOS (/servicos)
-│   ├── Gerar Clientes com Marketing Digital (/servicos/gerar-clientes)  [página principal]
-│   ├── Posicionamento Digital (/servicos/posicionamento-digital)
-│   └── Site Estratégico (/servicos/site-estrategico)
-├── SOBRE (/sobre)
-├── BLOG (/blog)
-└── CONTATO (/contato)
+```mermaid
+graph TD
+    HOME["HOME (/)"]
+    SERVICOS["SERVIÇOS (/servicos)"]
+    GERAR["Gerar Clientes com Marketing Digital (/servicos/gerar-clientes)"]
+    POSICIONAMENTO["Posicionamento Digital (/servicos/posicionamento-digital)"]
+    SITE["Site Estratégico (/servicos/site-estrategico)"]
+    SOBRE["SOBRE (/sobre)"]
+    BLOG["BLOG (/blog)"]
+    CONTATO["CONTATO (/contato)"]
+
+    HOME --> SERVICOS
+    SERVICOS --> GERAR
+    SERVICOS --> POSICIONAMENTO
+    SERVICOS --> SITE
+    HOME --> SOBRE
+    HOME --> BLOG
+    HOME --> CONTATO
+
+    style GERAR fill:#f9d71c,stroke:#333,stroke-width:2px
 ```
 
 | Página | Slug | Prioridade | Objetivo Principal |
@@ -409,28 +420,20 @@ HOME (/)
 
 ## Roadmap de Implementação
 
-```
-Fase 1 — Estrutura base
-  └── Home completa (todas as seções)
+```mermaid
+graph LR
+    F1[Fase 1: Estrutura Base] --> F2[Fase 2: Serviços]
+    F2 --> F3[Fase 3: Institucionais]
+    F3 --> F4[Fase 4: Blog & SEO]
+    F4 --> F5[Fase 5: Integrações & QA]
 
-Fase 2 — Páginas de serviço
-  ├── Gerar Clientes (/servicos/gerar-clientes)
-  ├── Posicionamento Digital
-  └── Site Estratégico
-
-Fase 3 — Institucionais
-  ├── Sobre
-  └── Contato
-
-Fase 4 — Blog & SEO
-  ├── Template de posts
-  ├── Schema markup
-  └── Sitemap + robots.txt
-
-Fase 5 — Integrações e QA
-  ├── GTM + GA4 + Ads + Meta Pixel
-  ├── WhatsApp flutuante
-  └── QA mobile + Core Web Vitals + Launch
+    subgraph "Sprints"
+    F1
+    F2
+    F3
+    F4
+    F5
+    end
 ```
 
 ---

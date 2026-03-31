@@ -3,15 +3,25 @@
 Este documento contém os elementos compartilhados e as configurações técnicas para todo o site NTA Digital.
 
 ## Visão Geral da Arquitetura
-```
-HOME (/)
-├── SERVIÇOS (/servicos)
-│   ├── Gerar Clientes com Marketing Digital (/servicos/gerar-clientes)
-│   ├── Posicionamento Digital (/servicos/posicionamento-digital)
-│   └── Site Estratégico (/servicos/site-estrategico)
-├── SOBRE (/sobre)
-├── BLOG (/blog)
-└── CONTATO (/contato)
+
+```mermaid
+graph TD
+    HOME["HOME (/)"]
+    SERVICOS["SERVIÇOS (/servicos)"]
+    GERAR["Gerar Clientes (/servicos/gerar-clientes)"]
+    POSICIONAMENTO["Posicionamento Digital (/servicos/posicionamento-digital)"]
+    SITE["Site Estratégico (/servicos/site-estrategico)"]
+    SOBRE["SOBRE (/sobre)"]
+    BLOG["BLOG (/blog)"]
+    CONTATO["CONTATO (/contato)"]
+
+    HOME --> SERVICOS
+    SERVICOS --> GERAR
+    SERVICOS --> POSICIONAMENTO
+    SERVICOS --> SITE
+    HOME --> SOBRE
+    HOME --> BLOG
+    HOME --> CONTATO
 ```
 
 ## Elementos Globais
