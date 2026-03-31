@@ -83,8 +83,16 @@ for page in pages:
     head = re.sub(r'<meta name="twitter:description" content=".*?">', f'<meta name="twitter:description" content="{page["desc"]}">', head)
 
     main_empty = f'{main_match.group(1)}\n        <section class="h-hero pt-32 pb-16">\n            <div class="container">\n                <div class="h-section-header">\n                    <h1 class="h-section-title" style="margin-top: 15vh; text-transform: uppercase">{page["file"].replace(".html", "").replace("-", " ")}</h1>\n                    <p class="h-about__desc">Conteúdo em construção...</p>\n                </div>\n            </div>\n        </section>\n    {main_match.group(2)}'
+
+    main_content = main_empty
+    if os.path.exists(page_path):
+        with open(page_path, 'r', encoding='utf-8') as existing_file:
+            existing_html = existing_file.read()
+        existing_main_match = re.search(r'(<main id="main"[^>]*>.*?</main>)', existing_html, flags=re.DOTALL)
+        if existing_main_match:
+            main_content = existing_main_match.group(1)
     
-    full_html = f'<!DOCTYPE html>\n<html lang="pt-BR">\n{head}\n{top}{main_empty}\n{body_bottom_match.group(1)}'
+    full_html = f'<!DOCTYPE html>\n<html lang="pt-BR">\n{head}\n{top}{main_content}\n{body_bottom_match.group(1)}'
     
     with open(page_path, 'w', encoding='utf-8') as out:
         out.write(full_html)

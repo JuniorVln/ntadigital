@@ -4,70 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Blog | Dicas e Estratégias de Marketing Digital | NTA Digital</title>
-    <meta name="description" content="Conteúdos, dicas e estratégias avançadas de marketing digital e SEO.">
+
+    <!-- SEO -->
+    <title>Blog NTA Digital | Marketing Digital para Vendas e Geração de Clientes</title>
+    <meta name="description" content="Dicas práticas de marketing digital para vender mais. Sem linguagem técnica — só o que realmente funciona.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://ntadigital.com.br/blog">
 
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Blog | Dicas e Estratégias de Marketing Digital | NTA Digital">
-    <meta property="og:description" content="Conteúdos, dicas e estratégias avançadas de marketing digital e SEO.">
+    <meta property="og:title" content="Blog NTA Digital | Marketing Digital para Vendas e Geração de Clientes">
+    <meta property="og:description" content="Dicas práticas de marketing digital para vender mais. Sem linguagem técnica — só o que realmente funciona.">
     <meta property="og:url" content="https://ntadigital.com.br/blog">
     <meta property="og:image" content="https://ntadigital.com.br/assets/img/og-image.jpg">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:site_name" content="NTA Digital">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Blog | Dicas e Estratégias de Marketing Digital | NTA Digital">
-    <meta name="twitter:description" content="Conteúdos, dicas e estratégias avançadas de marketing digital e SEO.">
-    <meta name="twitter:image" content="https://ntadigital.com.br/assets/img/og-image.jpg">
-
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="../assets/img/logo-nta.webp">
     <link rel="apple-touch-icon" href="../assets/img/logo-nta.webp">
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
 
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/home.css">
-    <link rel="stylesheet" href="../css/servicos.css">
+    <link rel="stylesheet" href="../css/blog.css">
 
+    <!-- Schema.org — Blog -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "ItemList",
-        "name": "Serviços NTA Digital",
-        "itemListElement": [
-            {
-                "@type": "Service",
-                "position": 1,
-                "name": "Gerar Clientes com Marketing Digital",
-                "url": "https://ntadigital.com.br/blog/gerar-clientes"
-            },
-            {
-                "@type": "Service",
-                "position": 2,
-                "name": "Posicionamento Digital",
-                "url": "https://ntadigital.com.br/blog/posicionamento-digital"
-            },
-            {
-                "@type": "Service",
-                "position": 3,
-                "name": "Site Estratégico",
-                "url": "https://ntadigital.com.br/blog/site-estrategico"
+        "@type": "Blog",
+        "name": "Blog NTA Digital",
+        "url": "https://ntadigital.com.br/blog",
+        "description": "Dicas práticas de marketing digital para vender mais.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "NTA Digital",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://ntadigital.com.br/assets/img/logo-nta-full.png"
             }
-        ]
+        }
     }
     </script>
 </head>
-<body class="s-page">
 
-    <nav class="nav nav--services" id="nav" role="navigation" aria-label="Navegação principal">
+<body>
+
+    <!-- ═══════════════════════════════════════
+         NAVIGATION
+         ═══════════════════════════════════════ -->
+    <nav class="nav nav--subpage" id="nav" role="navigation" aria-label="Navegação principal">
         <div class="nav__inner">
-            <a href="../index.html" aria-label="NTA Digital - Página inicial">
+            <a href="../index.html" aria-label="NTA Digital — Página inicial">
                 <img src="../assets/img/logo-nta-full.png" alt="NTA Digital" class="nav__logo" width="140" height="36">
             </a>
 
@@ -79,8 +75,8 @@
                 <a href="./contato.html" class="nav__pill-link">Contato</a>
             </div>
 
-            <a href="#" class="nav__hero-cta hide-mobile" data-whatsapp data-whatsapp-msg="Olá, vim pelo site e quero saber qual serviço da NTA é ideal para gerar mais clientes!">
-                Quero gerar clientes
+            <a href="#" class="nav__hero-cta hide-mobile" data-whatsapp data-whatsapp-msg="Olá, vim pelo blog e quero saber como gerar mais clientes para minha empresa!">
+                Falar com especialista
                 <span class="nav__hero-cta-arrow">
                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </span>
@@ -94,34 +90,149 @@
         </div>
     </nav>
 
+    <!-- Mobile Nav -->
     <div class="nav__mobile" id="nav-mobile" role="dialog" aria-label="Menu mobile">
         <a href="../index.html" class="nav__link">Home</a>
         <a href="./servicos.html" class="nav__link">Serviços</a>
         <a href="./sobre.html" class="nav__link">Sobre</a>
         <a href="./blog.html" class="nav__link nav__link--active">Blog</a>
         <a href="./contato.html" class="nav__link">Contato</a>
-        <a href="#" class="btn btn--primary btn--lg" data-whatsapp data-whatsapp-msg="Olá, vim pelo site e quero saber qual serviço da NTA é ideal para gerar mais clientes!" style="margin-top: 24px;">
+        <a href="#" class="btn btn--primary btn--lg" data-whatsapp data-whatsapp-msg="Olá, vim pelo blog e quero saber como gerar mais clientes para minha empresa!" style="margin-top: 24px;">
             Quero gerar clientes
         </a>
     </div>
 
+    <!-- ═══════════════════════════════════════
+         MAIN CONTENT
+         ═══════════════════════════════════════ -->
     <main id="main" role="main">
-        <section class="h-hero pt-32 pb-16">
+
+        <!-- HERO SECTION -->
+        <header class="b-hero">
+            <div class="b-hero__bg"></div>
+            <div class="container relative">
+                <span class="b-hero__tag reveal">Conteúdo & Estratégia</span>
+                <h1 class="b-hero__title reveal">Insights para você<br>vender mais pela internet</h1>
+                <p class="b-hero__desc reveal">Dicas práticas e estratégicas para transformar seu marketing digital em uma máquina de vendas previsível.</p>
+            </div>
+        </header>
+
+        <!-- FEATURED POST -->
+        <section class="b-featured" aria-label="Artigo em destaque">
             <div class="container">
-                <div class="h-section-header">
-                    <h1 class="h-section-title" style="margin-top: 15vh; text-transform: uppercase">blog</h1>
-                    <p class="h-about__desc">Conteúdo em construção...</p>
+                <article class="b-featured__card reveal">
+                    <div class="b-featured__img-wrap">
+                        <img src="../assets/img/blog-vendas.png" alt="Por que sua empresa não vende pela internet" class="b-featured__img">
+                    </div>
+                    <div class="b-featured__content">
+                        <span class="b-featured__category">Vendas Online</span>
+                        <h2 class="b-featured__title">Por que sua empresa não vende pela internet (e como resolver)</h2>
+                        <p class="b-featured__excerpt">Você investe em anúncios, tem um site, mas o telefone não toca. Descubra os 3 pilares que estão faltando na sua estratégia de vendas digitais.</p>
+                        <a href="#" class="btn btn--ghost btn--sm" style="width: fit-content">Ler artigo completo</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- POSTS GRID -->
+        <section class="b-grid" aria-label="Todos os artigos">
+            <div class="container">
+                <div class="b-grid__container">
+                    
+                    <!-- Post 1 -->
+                    <article class="b-post-card reveal-stagger">
+                        <div class="b-post-card__img-wrap">
+                            <img src="../assets/img/blog-leads.png" alt="Geração de clientes" class="b-post-card__img">
+                        </div>
+                        <div class="b-post-card__content">
+                            <span class="b-post-card__category">Geração de Clientes</span>
+                            <h3 class="b-post-card__title">Como gerar clientes todos os dias com marketing digital</h3>
+                            <p class="b-post-card__excerpt">O segredo da escala não é sorte, é processo. Aprenda como criar um funil de vendas automático.</p>
+                        </div>
+                        <div class="b-post-card__footer">
+                            <i data-lucide="clock" style="width:12px;height:12px;margin-right:6px"></i> 5 min de leitura
+                        </div>
+                    </article>
+
+                    <!-- Post 2 -->
+                    <article class="b-post-card reveal-stagger">
+                        <div class="b-post-card__img-wrap">
+                            <img src="../assets/img/blog-erro.png" alt="Erros comuns" class="b-post-card__img">
+                        </div>
+                        <div class="b-post-card__content">
+                            <span class="b-post-card__category">Performance</span>
+                            <h3 class="b-post-card__title">O maior erro de quem investe em marketing digital atualmente</h3>
+                            <p class="b-post-card__excerpt">Muitas empresas perdem dinheiro por focar na métrica errada. Saiba o que realmente importa para o seu ROI.</p>
+                        </div>
+                        <div class="b-post-card__footer">
+                            <i data-lucide="clock" style="width:12px;height:12px;margin-right:6px"></i> 4 min de leitura
+                        </div>
+                    </article>
+
+                    <!-- Post 3 -->
+                    <article class="b-post-card reveal-stagger">
+                        <div class="b-post-card__img-wrap">
+                            <img src="../assets/img/blog-investimento.png" alt="Investimento" class="b-post-card__img">
+                        </div>
+                        <div class="b-post-card__content">
+                            <span class="b-post-card__category">Estratégia</span>
+                            <h3 class="b-post-card__title">Quanto investir para ter resultado com marketing digital?</h3>
+                            <p class="b-post-card__excerpt">Não existe valor mágico, mas existe cálculo de viabilidade. Aprenda a definir seu orçamento ideal.</p>
+                        </div>
+                        <div class="b-post-card__footer">
+                            <i data-lucide="clock" style="width:12px;height:12px;margin-right:6px"></i> 6 min de leitura
+                        </div>
+                    </article>
+
+                    <!-- Post 4 -->
+                    <article class="b-post-card reveal-stagger">
+                        <div class="b-post-card__img-wrap">
+                            <img src="../assets/img/blog-retorno.png" alt="Retorno" class="b-post-card__img">
+                        </div>
+                        <div class="b-post-card__content">
+                            <span class="b-post-card__category">Anúncios</span>
+                            <h3 class="b-post-card__title">Por que você não está tendo retorno com anúncios online?</h3>
+                            <p class="b-post-card__excerpt">Seus anúncios atraem cliques mas não geram vendas? O problema pode estar além da campanha.</p>
+                        </div>
+                        <div class="b-post-card__footer">
+                            <i data-lucide="clock" style="width:12px;height:12px;margin-right:6px"></i> 5 min de leitura
+                        </div>
+                    </article>
+
                 </div>
             </div>
         </section>
+
+        <!-- NEWSLETTER -->
+        <section class="b-newsletter reveal">
+            <div class="container">
+                <div class="b-newsletter__card">
+                    <h2 class="b-newsletter__title">Receba dicas exclusivas no seu email</h2>
+                    <p class="b-newsletter__desc">Sem spam. Apenas estratégias reais para fazer sua empresa vender mais, enviadas semanalmente.</p>
+                    <form class="b-newsletter__form">
+                        <div class="b-newsletter__input-wrap">
+                            <div class="input-wrap">
+                                <span class="input-wrap__icon"><i data-lucide="mail" style="width:16px;height:16px"></i></span>
+                                <input type="email" placeholder="Seu melhor e-mail" class="input" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn--primary">Inscrever-se</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-
+    <!-- ═══════════════════════════════════════
+         FOOTER
+         ═══════════════════════════════════════ -->
     <footer class="footer" id="footer" role="contentinfo">
         <div class="container">
             <div class="footer__grid">
+                <!-- Col 1: Sobre -->
                 <div>
-                    <img src="../assets/img/logo-nta.webp" alt="NTA Digital" class="footer__logo" width="120" height="32">
+                    <img src="../assets/img/logo-nta-full.png" alt="NTA Digital" class="footer__logo" width="120" height="32">
                     <p class="footer__desc">
                         Especialistas em aumentar vendas e gerar clientes
                         através do marketing digital.
@@ -139,6 +250,7 @@
                     </div>
                 </div>
 
+                <!-- Col 2: Links -->
                 <div>
                     <h4 class="footer__heading">Navegação</h4>
                     <ul class="footer__list">
@@ -150,6 +262,7 @@
                     </ul>
                 </div>
 
+                <!-- Col 3: Serviços -->
                 <div>
                     <h4 class="footer__heading">Serviços</h4>
                     <ul class="footer__list">
@@ -159,11 +272,12 @@
                     </ul>
                 </div>
 
+                <!-- Col 4: Contato -->
                 <div>
                     <h4 class="footer__heading">Contato</h4>
                     <ul class="footer__list">
                         <li>
-                            <a href="https://wa.me/5541998081519" class="footer__link" target="_blank" rel="noopener noreferrer">
+                            <a href="#" class="footer__link" data-whatsapp>
                                 <i data-lucide="message-circle" style="width:14px;height:14px;display:inline;vertical-align:middle;margin-right:6px"></i>
                                 (41) 99808-1519
                             </a>
@@ -186,18 +300,27 @@
 
             <div class="footer__bottom">
                 <span>© 2026 NTA Digital - Todos os Direitos Reservados</span>
-                <span>Feito com estrategia por NTA Digital</span>
+                <span>Feito com estratégia por NTA Digital</span>
             </div>
         </div>
     </footer>
 
-    <div class="whatsapp-float" id="whatsapp-float">
+    <!-- Whatsapp Float -->
+    <div class="whatsapp-float">
         <span class="whatsapp-float__tooltip">Fale conosco</span>
-        <a href="https://wa.me/5541998081519?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20NTA%20Digital." target="_blank" rel="noopener noreferrer" class="whatsapp-float__btn" aria-label="Abrir conversa no WhatsApp" data-whatsapp>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="whatsapp-float__btn" aria-label="Abrir conversa no WhatsApp" data-whatsapp>
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         </a>
     </div>
 
+    <!-- Scripts -->
     <script src="../js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        });
+    </script>
 </body>
 </html>
