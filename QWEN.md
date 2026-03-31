@@ -171,6 +171,10 @@ O deploy é feito via **Vercel**, configurado em `vercel.json`:
 
 3. **Comentários**: Usar `/* ═══════ Section ═══════ */` para separar seções grandes
 
+4. **Mobile-first breakpoints**:
+   - `@media (max-width: 768px)` → Tablet e mobile
+   - `@media (max-width: 480px)` → Mobile pequeno
+
 ### JavaScript
 
 1. **Padrão**: Funções nomeadas e organizadas por feature
