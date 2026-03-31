@@ -11,7 +11,7 @@
     background: var(--bg-primary);
     position: relative;
     overflow: hidden;
-    text-align: center;
+    text-align: left;
 }
 
 .b-hero__bg {
@@ -46,10 +46,11 @@
     position: relative;
     z-index: 1;
     font-family: var(--font-heading);
-    font-size: clamp(2.5rem, 8vw, 4rem);
-    font-weight: 700;
-    line-height: 1.1;
-    margin-bottom: var(--space-6);
+    font-size: clamp(38px, 6vw, 68px);
+    font-weight: 850;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    margin-bottom: var(--space-8);
     color: var(--text-primary);
 }
 
@@ -59,7 +60,7 @@
     font-size: var(--text-lg);
     color: var(--text-secondary);
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0;
     line-height: 1.6;
 }
 

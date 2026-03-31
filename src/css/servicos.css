@@ -60,11 +60,12 @@
 
 .s-services-hero__title {
     font-family: var(--font-heading);
-    font-size: clamp(42px, 5.8vw, 72px);
-    font-weight: 800;
-    line-height: 1.04;
+    font-size: clamp(38px, 6vw, 68px);
+    font-weight: 850;
+    line-height: 1.05;
     letter-spacing: -0.04em;
-    margin-bottom: 18px;
+    margin-bottom: var(--space-8);
+    color: var(--text-primary);
 }
 
 .s-services-hero__desc {
