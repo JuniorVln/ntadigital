@@ -39,6 +39,7 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/home.css">
 
     <!-- Google Tag Manager (placeholder) -->
     <!-- <script>(function(w,d,s,l,i){...})(window,document,'script','dataLayer','GTM-XXXXXX');</script> -->
@@ -75,30 +76,30 @@
     <!-- ═══════════════════════════════════════
          NAVIGATION
          ═══════════════════════════════════════ -->
-    <nav class="nav" id="nav" role="navigation" aria-label="Navegação principal">
+    <nav class="nav nav--hero" id="nav" role="navigation" aria-label="Navegação principal">
         <div class="nav__inner">
+
+            <!-- Logo -->
             <a href="/" aria-label="NTA Digital — Página inicial">
-                <img src="./assets/img/logo-nta.webp" alt="NTA Digital" class="nav__logo" width="140" height="36">
+                <img src="./assets/img/logo-nta-full.png" alt="NTA Digital" class="nav__logo" width="140" height="36">
             </a>
 
-            <div class="nav__links hide-mobile">
-                <a href="/" class="nav__link">Home</a>
-                <a href="./pages/servicos.html" class="nav__link">Serviços</a>
-                <a href="./pages/sobre.html" class="nav__link">Sobre</a>
-                <a href="./pages/blog.html" class="nav__link">Blog</a>
-                <a href="./pages/contato.html" class="nav__link">Contato</a>
+            <!-- Pill nav — centro -->
+            <div class="nav__pill hide-mobile">
+                <a href="/" class="nav__pill-link nav__pill-link--active">Home</a>
+                <a href="./pages/servicos.html" class="nav__pill-link">Serviços</a>
+                <a href="./pages/sobre.html" class="nav__pill-link">Sobre</a>
+                <a href="./pages/blog.html" class="nav__pill-link">Blog</a>
+                <a href="./pages/contato.html" class="nav__pill-link">Contato</a>
             </div>
 
-            <div class="flex" style="align-items: center; gap: 16px;">
-                <a href="tel:+5541998081519" class="nav__phone hide-mobile">
-                    <i data-lucide="phone" style="width:14px;height:14px"></i>
-                    (41) 99808-1519
-                </a>
-                <a href="#" class="btn btn--primary btn--sm nav__cta hide-mobile" data-whatsapp data-whatsapp-msg="Olá, vim pelo site e quero saber como gerar mais clientes para minha empresa!">
-                    <i data-lucide="zap" style="width:14px;height:14px"></i>
-                    Quero gerar clientes
-                </a>
-            </div>
+            <!-- CTA direita -->
+            <a href="#" class="nav__hero-cta hide-mobile" data-whatsapp data-whatsapp-msg="Olá, vim pelo site e quero saber como gerar mais clientes para minha empresa!">
+                Quero gerar clientes
+                <span class="nav__hero-cta-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </span>
+            </a>
 
             <!-- Mobile Toggle -->
             <button class="nav__toggle show-mobile" aria-label="Abrir menu" aria-expanded="false">
@@ -127,7 +128,653 @@
          ═══════════════════════════════════════ -->
     <main id="main" role="main">
 
-        <!-- Conteúdo da página aqui -->
+
+        <!-- ═══════════════════════════════════════
+             HERO — FULL BLEED (referência HelioSpark)
+             ═══════════════════════════════════════ -->
+        <section class="h-hero" aria-label="Página inicial">
+
+            <!-- Background: substituir por foto real de marketing digital -->
+            <div class="h-hero__bg" aria-hidden="true"></div>
+            <div class="h-hero__overlay" aria-hidden="true"></div>
+
+            <!-- Conteúdo — lado esquerdo -->
+            <div class="container h-hero__container">
+                <div class="h-hero__content">
+
+                    <h1 class="h-hero__title">
+                        Mais Clientes.<br>
+                        Mais Vendas.<br>
+                        <em>Resultado Real.</em>
+                    </h1>
+
+                    <p class="h-hero__desc">
+                        Transformamos tráfego pago em crescimento previsível.<br>
+                        Estratégias personalizadas que geram clientes e escalam o seu negócio.
+                    </p>
+
+                    <!-- CTA + Social proof -->
+                    <div class="h-hero__actions">
+
+                        <a href="#" class="h-hero__cta" data-whatsapp data-whatsapp-msg="Olá, vim pelo site e quero saber como gerar mais clientes para minha empresa!">
+                            Quero Gerar Clientes
+                            <span class="h-hero__cta-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </span>
+                        </a>
+
+                        <div class="h-hero__proof">
+                            <div class="h-hero__avatars">
+                                <span class="h-hero__av" style="--av-bg:#c8873a">M</span>
+                                <span class="h-hero__av" style="--av-bg:#3a7c9e">R</span>
+                                <span class="h-hero__av" style="--av-bg:#7a5ea0">J</span>
+                                <span class="h-hero__av" style="--av-bg:#4e9a6e">A</span>
+                            </div>
+                            <div class="h-hero__proof-info">
+                                <div class="h-hero__stars">★★★★★</div>
+                                <span class="h-hero__proof-label">+150 clientes atendidos</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats bar — inferior -->
+            <div class="h-hero__stats-bar">
+                <div class="container">
+                    <div class="h-hero__stats-row">
+                        <div class="h-hero__stat">
+                            <span class="h-hero__stat-val">R$2M+</span>
+                            <span class="h-hero__stat-lbl">em vendas geradas</span>
+                        </div>
+                        <div class="h-hero__stat-sep" aria-hidden="true"></div>
+                        <div class="h-hero__stat">
+                            <span class="h-hero__stat-val">150+</span>
+                            <span class="h-hero__stat-lbl">clientes atendidos</span>
+                        </div>
+                        <div class="h-hero__stat-sep" aria-hidden="true"></div>
+                        <div class="h-hero__stat">
+                            <span class="h-hero__stat-val">98%</span>
+                            <span class="h-hero__stat-lbl">taxa de renovação</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ═══════════════════════════════════════
+             PROOF BAR
+             ═══════════════════════════════════════ -->
+        <div class="h-proof" aria-label="Plataformas parceiras">
+            <div class="h-proof__wrap">
+                <span class="h-proof__label">Campanhas ativas em</span>
+                <div class="h-proof__marquee">
+                    <div class="h-proof__track" aria-hidden="true">
+                        <!-- First set -->
+                        <div class="h-proof__item">
+                            <div class="h-proof__item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                            </div>
+                            <span class="h-proof__item-name">Meta Ads</span>
+                        </div>
+                        <div class="h-proof__item">
+                            <div class="h-proof__item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                            </div>
+                            <span class="h-proof__item-name">Google Ads</span>
+                        </div>
+                        <div class="h-proof__item">
+                            <div class="h-proof__item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+                            </div>
+                            <span class="h-proof__item-name">YouTube Ads</span>
+                        </div>
+                        <div class="h-proof__item">
+                            <div class="h-proof__item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                            </div>
+                            <span class="h-proof__item-name">LinkedIn Ads</span>
+                        </div>
+                        <div class="h-proof__item">
+                            <div class="h-proof__item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0 1 12 2.944a11.955 11.955 0 0 1-8.618 3.04A12.02 12.02 0 0 0 3 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                            </div>
+                            <span class="h-proof__item-name">TikTok Ads</span>
+                        </div>
+                        <div class="h-proof__item">
+                            <div class="h-proof__item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                            </div>
+                            <span class="h-proof__item-name">Analytics</span>
+                        </div>
+                        <!-- Duplicate for seamless loop -->
+                        <div class="h-proof__item">
+                            <div class="h-proof__item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                            </div>
+                            <span class="h-proof__item-name">Meta Ads</span>
+                        </div>
+                        <div class="h-proof__item">
+                            <div class="h-proof__item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                            </div>
+                            <span class="h-proof__item-name">Google Ads</span>
+                        </div>
+                        <div class="h-proof__item">
+                            <div class="h-proof__item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+                            </div>
+                            <span class="h-proof__item-name">YouTube Ads</span>
+                        </div>
+                        <div class="h-proof__item">
+                            <div class="h-proof__item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                            </div>
+                            <span class="h-proof__item-name">LinkedIn Ads</span>
+                        </div>
+                        <div class="h-proof__item">
+                            <div class="h-proof__item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0 1 12 2.944a11.955 11.955 0 0 1-8.618 3.04A12.02 12.02 0 0 0 3 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                            </div>
+                            <span class="h-proof__item-name">TikTok Ads</span>
+                        </div>
+                        <div class="h-proof__item">
+                            <div class="h-proof__item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                            </div>
+                            <span class="h-proof__item-name">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ═══════════════════════════════════════
+             STATS
+             ═══════════════════════════════════════ -->
+        <section class="h-stats" id="numeros" aria-label="Números NTA Digital">
+            <div class="container">
+                <div class="h-stats__grid reveal-stagger">
+                    <div class="h-stat">
+                        <div class="h-stat__line"></div>
+                        <div class="h-stat__num">
+                            <span data-count="1000" data-suffix="+">1.000+</span>
+                        </div>
+                        <p class="h-stat__label">Empresas atendidas em todo o Brasil</p>
+                    </div>
+                    <div class="h-stat">
+                        <div class="h-stat__line"></div>
+                        <div class="h-stat__num">
+                            R$<span data-count="15" data-suffix="M+">15M+</span>
+                        </div>
+                        <p class="h-stat__label">Em receita gerada para nossos clientes</p>
+                    </div>
+                    <div class="h-stat">
+                        <div class="h-stat__line"></div>
+                        <div class="h-stat__num">
+                            <span data-count="98" data-suffix="%">98%</span>
+                        </div>
+                        <p class="h-stat__label">De satisfação dos clientes atendidos</p>
+                    </div>
+                    <div class="h-stat">
+                        <div class="h-stat__line"></div>
+                        <div class="h-stat__num">
+                            <span data-count="5" data-suffix="+">5+</span>
+                        </div>
+                        <p class="h-stat__label">Anos de experiência no mercado digital</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ═══════════════════════════════════════
+             SERVICES
+             ═══════════════════════════════════════ -->
+        <section class="h-services" id="servicos" aria-label="Nossos Serviços">
+            <div class="container">
+                <div class="h-section-header reveal">
+                    <div>
+                        <div class="h-section-tag">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                            O que fazemos
+                        </div>
+                        <h2 class="h-section-title">Serviços que geram<br>resultados reais</h2>
+                    </div>
+                    <a href="./pages/servicos.html" class="h-section-link">
+                        Ver todos os serviços
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+
+                <div class="h-services__grid reveal-stagger">
+
+                    <!-- Service 01 -->
+                    <div class="h-service-card">
+                        <div class="h-service-card__num">01</div>
+                        <div class="h-service-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                        </div>
+                        <h3 class="h-service-card__title">Tráfego Pago</h3>
+                        <p class="h-service-card__desc">
+                            Criamos e gerenciamos campanhas que colocam sua marca na frente de quem está pronto para comprar. Retorno mensurável desde o primeiro dia.
+                        </p>
+                        <div class="h-service-card__tags">
+                            <span class="h-service-card__tag">Meta Ads</span>
+                            <span class="h-service-card__tag">Google Ads</span>
+                            <span class="h-service-card__tag">TikTok Ads</span>
+                        </div>
+                        <a href="./pages/gerar-clientes.html" class="h-service-card__link">
+                            Saiba mais
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Service 02 -->
+                    <div class="h-service-card">
+                        <div class="h-service-card__num">02</div>
+                        <div class="h-service-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                        </div>
+                        <h3 class="h-service-card__title">Posicionamento Digital</h3>
+                        <p class="h-service-card__desc">
+                            Construímos a presença digital da sua marca para que ela seja encontrada, reconhecida e lembrada pelo público certo, nas plataformas certas.
+                        </p>
+                        <div class="h-service-card__tags">
+                            <span class="h-service-card__tag">Branding</span>
+                            <span class="h-service-card__tag">SEO</span>
+                            <span class="h-service-card__tag">Conteúdo</span>
+                        </div>
+                        <a href="./pages/posicionamento-digital.html" class="h-service-card__link">
+                            Saiba mais
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Service 03 -->
+                    <div class="h-service-card">
+                        <div class="h-service-card__num">03</div>
+                        <div class="h-service-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M3 9h18M9 21V9"/></svg>
+                        </div>
+                        <h3 class="h-service-card__title">Site Estratégico</h3>
+                        <p class="h-service-card__desc">
+                            Desenvolvemos sites e landing pages focados em conversão. Cada elemento é pensado para transformar visitantes em clientes e clientes em fãs.
+                        </p>
+                        <div class="h-service-card__tags">
+                            <span class="h-service-card__tag">Landing Pages</span>
+                            <span class="h-service-card__tag">CRO</span>
+                            <span class="h-service-card__tag">UX/UI</span>
+                        </div>
+                        <a href="./pages/site-estrategico.html" class="h-service-card__link">
+                            Saiba mais
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ═══════════════════════════════════════
+             HOW IT WORKS (PROCESS)
+             ═══════════════════════════════════════ -->
+        <section class="h-process" id="como-funciona" aria-label="Como funciona">
+            <div class="container">
+                <div class="h-process__header reveal">
+                    <div class="h-section-tag" style="color:var(--amber);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        Nossa metodologia
+                    </div>
+                    <h2 class="h-section-title" style="color:#fff;">Como transformamos<br>tráfego em resultado</h2>
+                </div>
+
+                <div class="h-process__grid reveal-stagger">
+                    <div class="h-process-step">
+                        <div class="h-process-step__num">01</div>
+                        <h3 class="h-process-step__title">Diagnóstico</h3>
+                        <p class="h-process-step__desc">
+                            Analisamos seu negócio, concorrência e mercado para entender onde estão as maiores oportunidades de crescimento.
+                        </p>
+                    </div>
+                    <div class="h-process-step">
+                        <div class="h-process-step__num">02</div>
+                        <h3 class="h-process-step__title">Estratégia</h3>
+                        <p class="h-process-step__desc">
+                            Montamos um plano personalizado com canais, orçamentos e metas claras para o seu perfil de cliente ideal.
+                        </p>
+                    </div>
+                    <div class="h-process-step">
+                        <div class="h-process-step__num">03</div>
+                        <h3 class="h-process-step__title">Execução e Escala</h3>
+                        <p class="h-process-step__desc">
+                            Implementamos, monitoramos e otimizamos em tempo real. Quando algo funciona, escalamos. Quando não, ajustamos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ═══════════════════════════════════════
+             ABOUT
+             ═══════════════════════════════════════ -->
+        <section class="h-about" id="sobre" aria-label="Sobre a NTA Digital">
+            <div class="container">
+                <div class="h-about__grid">
+
+                    <!-- Image -->
+                    <div class="h-about__image reveal--left reveal">
+                        <img
+                            src="./assets/img/image copy.png"
+                            alt="Fundador da NTA Digital"
+                            class="h-about__photo"
+                            loading="lazy"
+                            onerror="this.style.background='#F5F5F5'; this.removeAttribute('onerror');"
+                        >
+                        <div class="h-about__image-badge">
+                            <div class="h-about__image-badge-num">
+                                <span data-count="1000" data-prefix="+">+1K</span>
+                            </div>
+                            <div class="h-about__image-badge-label">clientes satisfeitos</div>
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="h-about__content reveal--right reveal">
+                        <div class="h-section-tag">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                            Por que a NTA Digital
+                        </div>
+                        <h2 class="h-section-title">
+                            Não vendemos serviço.<br>Entregamos crescimento.
+                        </h2>
+
+                        <p class="h-about__desc" style="margin-top:20px;">
+                            Somos especialistas em transformar investimento em marketing digital em resultados concretos: mais clientes, mais vendas, mais crescimento.
+                        </p>
+
+                        <ul class="h-about__list">
+                            <li class="h-about__list-item">
+                                <div class="h-about__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                </div>
+                                <span>Gestão de campanhas com foco em <strong>ROI positivo</strong> desde a primeira semana</span>
+                            </li>
+                            <li class="h-about__list-item">
+                                <div class="h-about__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                </div>
+                                <span>Relatórios claros e transparentes — você sabe onde cada centavo vai</span>
+                            </li>
+                            <li class="h-about__list-item">
+                                <div class="h-about__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                </div>
+                                <span>Equipe especializada com mais de <strong>5 anos de experiência</strong> em performance</span>
+                            </li>
+                            <li class="h-about__list-item">
+                                <div class="h-about__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                </div>
+                                <span>Atendimento dedicado — um time que conhece <strong>o seu negócio de perto</strong></span>
+                            </li>
+                        </ul>
+
+                        <a href="./pages/sobre.html" class="h-btn-primary" style="display:inline-flex;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            Conhecer a equipe
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ═══════════════════════════════════════
+             TESTIMONIALS
+             ═══════════════════════════════════════ -->
+        <section class="h-testimonials" id="depoimentos" aria-label="Depoimentos de clientes">
+            <div class="container">
+                <div class="h-testimonials__layout">
+
+                    <!-- LEFT: Header -->
+                    <div class="h-testimonials__header reveal">
+                        <div class="h-section-tag">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            Depoimentos
+                        </div>
+                        <h2 class="h-section-title">O que nossos clientes<br>falam da NTA</h2>
+                        <p class="h-testimonials__subtitle">Resultados reais de quem confiou no nosso trabalho.</p>
+                    </div>
+
+                    <!-- RIGHT: Two scrolling columns -->
+                    <div class="h-testimonials__columns">
+
+                        <!-- Column 1: scroll UP -->
+                        <div class="h-testi-col h-testi-col--up">
+                            <div class="h-testi-col__track">
+                                <!-- Card 1 -->
+                                <div class="h-testi-card">
+                                    <div class="h-testi-card__stars">★★★★★</div>
+                                    <span class="h-testi-card__quote-icon">"</span>
+                                    <p class="h-testi-card__quote">Em 60 dias triplicamos o número de agendamentos na clínica. A NTA não só entregou resultado, como me ensinou a entender os números. Não vou trocar por nada.</p>
+                                    <div class="h-testi-card__author">
+                                        <div class="h-testi-card__avatar" style="background:#FFB400;">C</div>
+                                        <div>
+                                            <div class="h-testi-card__name">Camila Ramos</div>
+                                            <div class="h-testi-card__role">Clínica de Estética · Curitiba</div>
+                                        </div>
+                                        <div class="h-testi-card__result">+3× leads</div>
+                                    </div>
+                                </div>
+                                <!-- Card 2 -->
+                                <div class="h-testi-card">
+                                    <div class="h-testi-card__stars">★★★★★</div>
+                                    <span class="h-testi-card__quote-icon">"</span>
+                                    <p class="h-testi-card__quote">Meu e-commerce estava estagnado há meses. Com a gestão da NTA o ROAS subiu de 1.8× para 4.5× em apenas 45 dias. Agora finalmente consigo escalar com segurança.</p>
+                                    <div class="h-testi-card__author">
+                                        <div class="h-testi-card__avatar" style="background:#FFD54F;">A</div>
+                                        <div>
+                                            <div class="h-testi-card__name">Ana Beatriz Lima</div>
+                                            <div class="h-testi-card__role">E-commerce de Moda · SP</div>
+                                        </div>
+                                        <div class="h-testi-card__result">ROAS 4.5×</div>
+                                    </div>
+                                </div>
+                                <!-- Card 3 -->
+                                <div class="h-testi-card">
+                                    <div class="h-testi-card__stars">★★★★★</div>
+                                    <span class="h-testi-card__quote-icon">"</span>
+                                    <p class="h-testi-card__quote">Começamos do zero no digital e em 3 meses já estávamos gerando R$ 80k em novas oportunidades todo mês. A equipe da NTA é extremamente comprometida.</p>
+                                    <div class="h-testi-card__author">
+                                        <div class="h-testi-card__avatar" style="background:#0A0A0A;color:#fff;">M</div>
+                                        <div>
+                                            <div class="h-testi-card__name">Marcos Ferreira</div>
+                                            <div class="h-testi-card__role">Indústria · Joinville</div>
+                                        </div>
+                                        <div class="h-testi-card__result">+320% faturamento</div>
+                                    </div>
+                                </div>
+                                <!-- Duplicated for seamless loop -->
+                                <div class="h-testi-card">
+                                    <div class="h-testi-card__stars">★★★★★</div>
+                                    <span class="h-testi-card__quote-icon">"</span>
+                                    <p class="h-testi-card__quote">Em 60 dias triplicamos o número de agendamentos na clínica. A NTA não só entregou resultado, como me ensinou a entender os números. Não vou trocar por nada.</p>
+                                    <div class="h-testi-card__author">
+                                        <div class="h-testi-card__avatar" style="background:#FFB400;">C</div>
+                                        <div>
+                                            <div class="h-testi-card__name">Camila Ramos</div>
+                                            <div class="h-testi-card__role">Clínica de Estética · Curitiba</div>
+                                        </div>
+                                        <div class="h-testi-card__result">+3× leads</div>
+                                    </div>
+                                </div>
+                                <div class="h-testi-card">
+                                    <div class="h-testi-card__stars">★★★★★</div>
+                                    <span class="h-testi-card__quote-icon">"</span>
+                                    <p class="h-testi-card__quote">Meu e-commerce estava estagnado há meses. Com a gestão da NTA o ROAS subiu de 1.8× para 4.5× em apenas 45 dias. Agora finalmente consigo escalar com segurança.</p>
+                                    <div class="h-testi-card__author">
+                                        <div class="h-testi-card__avatar" style="background:#FFD54F;">A</div>
+                                        <div>
+                                            <div class="h-testi-card__name">Ana Beatriz Lima</div>
+                                            <div class="h-testi-card__role">E-commerce de Moda · SP</div>
+                                        </div>
+                                        <div class="h-testi-card__result">ROAS 4.5×</div>
+                                    </div>
+                                </div>
+                                <div class="h-testi-card">
+                                    <div class="h-testi-card__stars">★★★★★</div>
+                                    <span class="h-testi-card__quote-icon">"</span>
+                                    <p class="h-testi-card__quote">Começamos do zero no digital e em 3 meses já estávamos gerando R$ 80k em novas oportunidades todo mês. A equipe da NTA é extremamente comprometida.</p>
+                                    <div class="h-testi-card__author">
+                                        <div class="h-testi-card__avatar" style="background:#0A0A0A;color:#fff;">M</div>
+                                        <div>
+                                            <div class="h-testi-card__name">Marcos Ferreira</div>
+                                            <div class="h-testi-card__role">Indústria · Joinville</div>
+                                        </div>
+                                        <div class="h-testi-card__result">+320% faturamento</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Column 2: scroll DOWN -->
+                        <div class="h-testi-col h-testi-col--down">
+                            <div class="h-testi-col__track">
+                                <!-- Card 4 -->
+                                <div class="h-testi-card">
+                                    <div class="h-testi-card__stars">★★★★★</div>
+                                    <span class="h-testi-card__quote-icon">"</span>
+                                    <p class="h-testi-card__quote">Tínhamos dificuldade em gerar orçamentos qualificados. A NTA estruturou nossas campanhas e hoje temos uma fila de clientes. O investimento se pagou no primeiro mês.</p>
+                                    <div class="h-testi-card__author">
+                                        <div class="h-testi-card__avatar" style="background:#0A0A0A;color:#fff;">R</div>
+                                        <div>
+                                            <div class="h-testi-card__name">Ricardo Souza</div>
+                                            <div class="h-testi-card__role">Construtora · Paraná</div>
+                                        </div>
+                                        <div class="h-testi-card__result">↓52% CPL</div>
+                                    </div>
+                                </div>
+                                <!-- Card 5 -->
+                                <div class="h-testi-card">
+                                    <div class="h-testi-card__stars">★★★★★</div>
+                                    <span class="h-testi-card__quote-icon">"</span>
+                                    <p class="h-testi-card__quote">A NTA transformou nossa presença no digital. Antes éramos invisíveis, hoje somos referência na região. Crescemos 200% em receita em menos de 6 meses.</p>
+                                    <div class="h-testi-card__author">
+                                        <div class="h-testi-card__avatar" style="background:#FFB400;">J</div>
+                                        <div>
+                                            <div class="h-testi-card__name">Juliana Nascimento</div>
+                                            <div class="h-testi-card__role">Clínica Odontológica · BH</div>
+                                        </div>
+                                        <div class="h-testi-card__result">+200% receita</div>
+                                    </div>
+                                </div>
+                                <!-- Card 6 -->
+                                <div class="h-testi-card">
+                                    <div class="h-testi-card__stars">★★★★★</div>
+                                    <span class="h-testi-card__quote-icon">"</span>
+                                    <p class="h-testi-card__quote">Tentei outras agências antes da NTA e nenhuma entregou resultado. Aqui em 30 dias já tinha retorno mensurável. Clareza total nos relatórios, zero enrolação.</p>
+                                    <div class="h-testi-card__author">
+                                        <div class="h-testi-card__avatar" style="background:#333;color:#fff;">P</div>
+                                        <div>
+                                            <div class="h-testi-card__name">Paulo Henrique</div>
+                                            <div class="h-testi-card__role">Escritório de Advocacia · SP</div>
+                                        </div>
+                                        <div class="h-testi-card__result">4× clientes</div>
+                                    </div>
+                                </div>
+                                <!-- Duplicated for seamless loop -->
+                                <div class="h-testi-card">
+                                    <div class="h-testi-card__stars">★★★★★</div>
+                                    <span class="h-testi-card__quote-icon">"</span>
+                                    <p class="h-testi-card__quote">Tínhamos dificuldade em gerar orçamentos qualificados. A NTA estruturou nossas campanhas e hoje temos uma fila de clientes. O investimento se pagou no primeiro mês.</p>
+                                    <div class="h-testi-card__author">
+                                        <div class="h-testi-card__avatar" style="background:#0A0A0A;color:#fff;">R</div>
+                                        <div>
+                                            <div class="h-testi-card__name">Ricardo Souza</div>
+                                            <div class="h-testi-card__role">Construtora · Paraná</div>
+                                        </div>
+                                        <div class="h-testi-card__result">↓52% CPL</div>
+                                    </div>
+                                </div>
+                                <div class="h-testi-card">
+                                    <div class="h-testi-card__stars">★★★★★</div>
+                                    <span class="h-testi-card__quote-icon">"</span>
+                                    <p class="h-testi-card__quote">A NTA transformou nossa presença no digital. Antes éramos invisíveis, hoje somos referência na região. Crescemos 200% em receita em menos de 6 meses.</p>
+                                    <div class="h-testi-card__author">
+                                        <div class="h-testi-card__avatar" style="background:#FFB400;">J</div>
+                                        <div>
+                                            <div class="h-testi-card__name">Juliana Nascimento</div>
+                                            <div class="h-testi-card__role">Clínica Odontológica · BH</div>
+                                        </div>
+                                        <div class="h-testi-card__result">+200% receita</div>
+                                    </div>
+                                </div>
+                                <div class="h-testi-card">
+                                    <div class="h-testi-card__stars">★★★★★</div>
+                                    <span class="h-testi-card__quote-icon">"</span>
+                                    <p class="h-testi-card__quote">Tentei outras agências antes da NTA e nenhuma entregou resultado. Aqui em 30 dias já tinha retorno mensurável. Clareza total nos relatórios, zero enrolação.</p>
+                                    <div class="h-testi-card__author">
+                                        <div class="h-testi-card__avatar" style="background:#333;color:#fff;">P</div>
+                                        <div>
+                                            <div class="h-testi-card__name">Paulo Henrique</div>
+                                            <div class="h-testi-card__role">Escritório de Advocacia · SP</div>
+                                        </div>
+                                        <div class="h-testi-card__result">4× clientes</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- /.h-testimonials__columns -->
+                </div><!-- /.h-testimonials__layout -->
+            </div>
+        </section>
+
+
+        <!-- ═══════════════════════════════════════
+             FINAL CTA
+             ═══════════════════════════════════════ -->
+        <section class="h-cta" id="contato" aria-label="Entre em contato">
+            <div class="container">
+                <div class="h-cta__inner reveal">
+                    <p class="h-cta__label">Pronto para crescer?</p>
+                    <h2 class="h-cta__title">
+                        Vamos transformar<br>seu negócio juntos
+                    </h2>
+                    <p class="h-cta__subtitle">
+                        Fale com um especialista agora e descubra como podemos
+                        gerar mais clientes e vendas para a sua empresa.
+                    </p>
+                    <div class="h-cta__actions">
+                        <a href="https://wa.me/5541998081519?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20uma%20an%C3%A1lise%20gratuita%20do%20meu%20neg%C3%B3cio!"
+                           class="h-cta__btn-primary"
+                           target="_blank" rel="noopener noreferrer"
+                           data-whatsapp
+                           data-whatsapp-msg="Olá, vim pelo site e quero uma análise gratuita do meu negócio!">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Falar no WhatsApp — É Grátis
+                        </a>
+                        <a href="tel:+5541998081519" class="h-cta__btn-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.95a16 16 0 0 0 6.27 6.27l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            Ligar agora
+                        </a>
+                    </div>
+                    <p class="h-cta__note">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        Diagnóstico gratuito · Sem compromisso · Resposta em até 2h
+                    </p>
+                </div>
+            </div>
+        </section>
+
 
     </main>
 
@@ -208,7 +855,7 @@
 
             <div class="footer__bottom">
                 <span>© 2026 NTA Digital — Todos os Direitos Reservados</span>
-                <span>Feito com ⚡ por NTA Digital</span>
+                <span>Feito com ⚡ por NTA Digital · Criado por <a href="https://www.arteone.com.br/" target="_blank" rel="noopener noreferrer" style="color:var(--amber);text-decoration:none;font-weight:600;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">ARTE ONE</a></span>
             </div>
         </div>
     </footer>

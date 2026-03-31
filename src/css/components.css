@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 14px var(--container-padding);
+    padding: 14px 0;
     background: rgba(8, 8, 8, 0.85);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -22,7 +22,7 @@
 }
 
 .nav--scrolled {
-    padding: 10px var(--container-padding);
+    padding: 10px 0;
     background: rgba(8, 8, 8, 0.95);
 }
 
@@ -33,6 +33,7 @@
     width: 100%;
     max-width: var(--container-max);
     margin: 0 auto;
+    padding: 0 var(--container-padding);
 }
 
 .nav__logo {
