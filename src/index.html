@@ -38,8 +38,8 @@
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/main.css?v=1.1">
+    <link rel="stylesheet" href="./css/home.css?v=1.1">
 
     <!-- Google Tag Manager (placeholder) -->
     <!-- <script>(function(w,d,s,l,i){...})(window,document,'script','dataLayer','GTM-XXXXXX');</script> -->
@@ -134,8 +134,12 @@
              ═══════════════════════════════════════ -->
         <section class="h-hero" aria-label="Página inicial">
 
-            <!-- Background: substituir por foto real de marketing digital -->
-            <div class="h-hero__bg" aria-hidden="true"></div>
+            <!-- Background: vídeo -->
+            <div class="h-hero__bg" aria-hidden="true">
+                <video class="h-hero__video" autoplay muted loop playsinline preload="auto">
+                    <source src="./assets/video/hero-01.mp4" type="video/mp4">
+                </video>
+            </div>
             <div class="h-hero__overlay" aria-hidden="true"></div>
 
             <!-- Conteúdo — lado esquerdo -->
@@ -162,44 +166,12 @@
                             </span>
                         </a>
 
-                        <div class="h-hero__proof">
-                            <div class="h-hero__avatars">
-                                <span class="h-hero__av" style="--av-bg:#c8873a">M</span>
-                                <span class="h-hero__av" style="--av-bg:#3a7c9e">R</span>
-                                <span class="h-hero__av" style="--av-bg:#7a5ea0">J</span>
-                                <span class="h-hero__av" style="--av-bg:#4e9a6e">A</span>
-                            </div>
-                            <div class="h-hero__proof-info">
-                                <div class="h-hero__stars">★★★★★</div>
-                                <span class="h-hero__proof-label">+150 clientes atendidos</span>
-                            </div>
-                        </div>
 
                     </div>
                 </div>
             </div>
 
-            <!-- Stats bar — inferior -->
-            <div class="h-hero__stats-bar">
-                <div class="container">
-                    <div class="h-hero__stats-row">
-                        <div class="h-hero__stat">
-                            <span class="h-hero__stat-val">R$2M+</span>
-                            <span class="h-hero__stat-lbl">em vendas geradas</span>
-                        </div>
-                        <div class="h-hero__stat-sep" aria-hidden="true"></div>
-                        <div class="h-hero__stat">
-                            <span class="h-hero__stat-val">150+</span>
-                            <span class="h-hero__stat-lbl">clientes atendidos</span>
-                        </div>
-                        <div class="h-hero__stat-sep" aria-hidden="true"></div>
-                        <div class="h-hero__stat">
-                            <span class="h-hero__stat-val">98%</span>
-                            <span class="h-hero__stat-lbl">taxa de renovação</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
 
         </section>
 
@@ -356,7 +328,7 @@
                     <div class="h-service-card">
                         <div class="h-service-card__num">01</div>
                         <div class="h-service-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
                         </div>
                         <h3 class="h-service-card__title">Tráfego Pago</h3>
                         <p class="h-service-card__desc">
@@ -425,35 +397,69 @@
              ═══════════════════════════════════════ -->
         <section class="h-process" id="como-funciona" aria-label="Como funciona">
             <div class="container">
-                <div class="h-process__header reveal">
-                    <div class="h-section-tag" style="color:var(--amber);">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                        Nossa metodologia
-                    </div>
-                    <h2 class="h-section-title" style="color:#fff;">Como transformamos<br>tráfego em resultado</h2>
-                </div>
+                <div class="h-process__layout">
 
-                <div class="h-process__grid reveal-stagger">
-                    <div class="h-process-step">
-                        <div class="h-process-step__num">01</div>
-                        <h3 class="h-process-step__title">Diagnóstico</h3>
-                        <p class="h-process-step__desc">
-                            Analisamos seu negócio, concorrência e mercado para entender onde estão as maiores oportunidades de crescimento.
-                        </p>
+                    <!-- LEFT: STICKY COLUMN -->
+                    <div class="h-process__sticky-col">
+                        <div class="h-section-tag">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            Nossa metodologia
+                        </div>
+                        <h2 class="h-process__main-title">Do diagnóstico<br>à escala real</h2>
+                        <p class="h-process__main-desc">Nossa metodologia foi construída para eliminar desperdício de verba e entregar crescimento previsível. Cada etapa tem propósito e resultado mensurável.</p>
+
+                        <div class="h-process__nav">
+                            <div class="h-process__nav-item" data-target="step-1">
+                                <span class="h-process__nav-num">01</span>
+                                <span class="h-process__nav-label">Diagnóstico</span>
+                            </div>
+                            <div class="h-process__nav-item" data-target="step-2">
+                                <span class="h-process__nav-num">02</span>
+                                <span class="h-process__nav-label">Estratégia</span>
+                            </div>
+                            <div class="h-process__nav-item" data-target="step-3">
+                                <span class="h-process__nav-num">03</span>
+                                <span class="h-process__nav-label">Execução e Escala</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="h-process-step">
-                        <div class="h-process-step__num">02</div>
-                        <h3 class="h-process-step__title">Estratégia</h3>
-                        <p class="h-process-step__desc">
-                            Montamos um plano personalizado com canais, orçamentos e metas claras para o seu perfil de cliente ideal.
-                        </p>
-                    </div>
-                    <div class="h-process-step">
-                        <div class="h-process-step__num">03</div>
-                        <h3 class="h-process-step__title">Execução e Escala</h3>
-                        <p class="h-process-step__desc">
-                            Implementamos, monitoramos e otimizamos em tempo real. Quando algo funciona, escalamos. Quando não, ajustamos.
-                        </p>
+
+                    <!-- RIGHT: SCROLLABLE STEPS -->
+                    <div class="h-process__steps-col">
+
+                        <div class="h-process-step" id="step-1">
+                            <div class="h-process-step__header">
+                                <span class="h-process-step__num">01</span>
+                                <h3 class="h-process-step__title">Diagnóstico</h3>
+                            </div>
+                            <p class="h-process-step__desc">Analisamos seu negócio, concorrência e mercado para identificar onde estão as maiores oportunidades de crescimento e onde o dinheiro está sendo desperdiçado.</p>
+                            <div class="h-process-step__img-wrap">
+                                <img src="./assets/img/blog-investimento.png" alt="Diagnóstico" class="h-process-step__img" loading="lazy">
+                            </div>
+                        </div>
+
+                        <div class="h-process-step" id="step-2">
+                            <div class="h-process-step__header">
+                                <span class="h-process-step__num">02</span>
+                                <h3 class="h-process-step__title">Estratégia</h3>
+                            </div>
+                            <p class="h-process-step__desc">Montamos um plano personalizado com os canais certos, orçamento otimizado e metas claras para o seu perfil de cliente ideal — sem achismo, só dados.</p>
+                            <div class="h-process-step__img-wrap">
+                                <img src="./assets/img/blog-leads.png" alt="Estratégia" class="h-process-step__img" loading="lazy">
+                            </div>
+                        </div>
+
+                        <div class="h-process-step" id="step-3">
+                            <div class="h-process-step__header">
+                                <span class="h-process-step__num">03</span>
+                                <h3 class="h-process-step__title">Execução e Escala</h3>
+                            </div>
+                            <p class="h-process-step__desc">Implementamos, monitoramos e otimizamos em tempo real. Quando algo funciona, escalamos. Quando não funciona, ajustamos rápido. Sem burocracia.</p>
+                            <div class="h-process-step__img-wrap">
+                                <img src="./assets/img/blog-escala.png" alt="Execução e Escala" class="h-process-step__img" loading="lazy">
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -501,27 +507,39 @@
                         <ul class="h-about__list">
                             <li class="h-about__list-item">
                                 <div class="h-about__list-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
                                 </div>
-                                <span>Gestão de campanhas com foco em <strong>ROI positivo</strong> desde a primeira semana</span>
+                                <div class="h-about__list-body">
+                                    <strong class="h-about__list-title">ROI positivo desde a semana 1</strong>
+                                    <span class="h-about__list-desc">Campanhas gerenciadas com foco total em retorno mensurável desde o início.</span>
+                                </div>
                             </li>
                             <li class="h-about__list-item">
                                 <div class="h-about__list-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
                                 </div>
-                                <span>Relatórios claros e transparentes — você sabe onde cada centavo vai</span>
+                                <div class="h-about__list-body">
+                                    <strong class="h-about__list-title">Transparência total</strong>
+                                    <span class="h-about__list-desc">Relatórios claros — você sabe exatamente onde cada centavo do orçamento vai.</span>
+                                </div>
                             </li>
                             <li class="h-about__list-item">
                                 <div class="h-about__list-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
                                 </div>
-                                <span>Equipe especializada com mais de <strong>5 anos de experiência</strong> em performance</span>
+                                <div class="h-about__list-body">
+                                    <strong class="h-about__list-title">5 anos de experiência em performance</strong>
+                                    <span class="h-about__list-desc">Equipe especializada e focada em resultados reais para o seu negócio.</span>
+                                </div>
                             </li>
                             <li class="h-about__list-item">
                                 <div class="h-about__list-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                                 </div>
-                                <span>Atendimento dedicado — um time que conhece <strong>o seu negócio de perto</strong></span>
+                                <div class="h-about__list-body">
+                                    <strong class="h-about__list-title">Atendimento que conhece seu negócio</strong>
+                                    <span class="h-about__list-desc">Um time dedicado que entende o seu mercado e trabalha como parceiro de crescimento.</span>
+                                </div>
                             </li>
                         </ul>
 

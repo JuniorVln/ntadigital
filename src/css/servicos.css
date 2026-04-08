@@ -57,16 +57,26 @@
 }
 
 .s-services-hero__eyebrow {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     margin-bottom: 18px;
-    padding: 8px 16px;
+    padding: 6px 14px;
     border-radius: var(--radius-full);
-    background: rgba(255, 180, 0, 0.12);
-    border: 1px solid rgba(255, 180, 0, 0.3);
+    background: var(--amber-subtle);
+    border: 1px solid rgba(255, 180, 0, 0.15);
     color: var(--amber);
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.s-services-hero__eyebrow svg {
+    width: 12px;
+    height: 12px;
+    stroke-width: 2.5;
+    flex-shrink: 0;
 }
 
 .s-services-hero__title {

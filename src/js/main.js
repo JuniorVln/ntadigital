@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initLucideIcons();
     initSmoothScroll();
     initFormHandling();
+    initProcessSteps();
 });
 
 
@@ -258,6 +259,34 @@ function showFormError(form, text) {
     initLucideIcons();
 
     setTimeout(() => msg.remove(), 5000);
+}
+
+
+/* ═══════════════════════════════════════
+   PROCESS STEPS — STICKY NAV
+   ═══════════════════════════════════════ */
+function initProcessSteps() {
+    const steps = document.querySelectorAll('.h-process-step');
+    const navItems = document.querySelectorAll('.h-process__nav-item');
+
+    if (!steps.length || !navItems.length) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const targetId = entry.target.id;
+                navItems.forEach(item => {
+                    item.classList.toggle('active', item.dataset.target === targetId);
+                });
+            }
+        });
+    }, {
+        root: null,
+        rootMargin: '-30% 0px -60% 0px',
+        threshold: 0
+    });
+
+    steps.forEach(step => observer.observe(step));
 }
 
 
