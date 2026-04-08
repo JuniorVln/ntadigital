@@ -23,14 +23,34 @@
 }
 
 .s-services-hero--listing {
+    background: #0a0a0a;
+}
+
+.s-services-hero__bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.s-services-hero__video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.s-services-hero__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
     background:
         linear-gradient(95deg, rgba(0, 0, 0, 0.86) 0%, rgba(0, 0, 0, 0.62) 46%, rgba(0, 0, 0, 0.72) 100%),
         radial-gradient(circle at 78% 12%, rgba(255, 180, 0, 0.2), transparent 42%),
-        radial-gradient(circle at 20% 100%, rgba(255, 180, 0, 0.08), transparent 55%),
-        url("../assets/img/image copy 2.png");
-    background-size: auto, auto, auto, cover;
-    background-position: center, center, center, center;
-    background-repeat: no-repeat;
+        radial-gradient(circle at 20% 100%, rgba(255, 180, 0, 0.08), transparent 55%);
+    pointer-events: none;
 }
 
 .s-services-hero__fx {
@@ -38,6 +58,7 @@
     inset: 0;
     pointer-events: none;
     opacity: 0.6;
+    z-index: 2;
     background-image: radial-gradient(circle, rgba(255, 255, 255, 0.075) 1px, transparent 1px);
     background-size: 26px 26px;
     mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), transparent 86%);
@@ -45,7 +66,7 @@
 
 .s-services-hero__grid {
     position: relative;
-    z-index: 1;
+    z-index: 3;
     display: grid;
     grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
     gap: 40px;
