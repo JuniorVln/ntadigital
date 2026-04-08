@@ -20,6 +20,15 @@
     pointer-events: none;
 }
 
+.s-hero__video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.18;
+}
+
 .s-hero__container {
     position: relative;
     z-index: var(--z-base);
