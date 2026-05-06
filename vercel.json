@@ -1,6 +1,8 @@
 {
   "outputDirectory": "src",
   "rewrites": [
+    { "source": "/marketing-digital", "destination": "/index.html" },
+    { "source": "/trafego-pago", "destination": "/pages/gerar-clientes.html" },
     { "source": "/servicos", "destination": "/pages/servicos.html" },
     { "source": "/servicos/gerar-clientes", "destination": "/pages/gerar-clientes.html" },
     { "source": "/servicos/posicionamento-digital", "destination": "/pages/posicionamento-digital.html" },

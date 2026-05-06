@@ -54,14 +54,15 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": ["Organization", "LocalBusiness"],
         "name": "NTA Digital",
-        "description": "Especialistas em aumentar vendas e gerar clientes através do marketing digital.",
+        "description": "Agência de marketing digital em Curitiba especializada em tráfego pago, Google Ads e geração de clientes pela internet.",
         "url": "https://ntadigital.com.br",
         "telephone": "+55-41-99808-1519",
         "email": "contato@ntadigital.com.br",
         "address": {
             "@type": "PostalAddress",
+            "streetAddress": "Rua Napoleão Laureano, 44 - Boqueirão",
             "addressLocality": "Curitiba",
             "addressRegion": "PR",
             "addressCountry": "BR"
@@ -70,6 +71,14 @@
             "https://instagram.com/ntadigital",
             "https://linkedin.com/company/ntadigital",
             "https://youtube.com/@ntadigital"
+        ],
+        "areaServed": "Curitiba, PR",
+        "knowsAbout": [
+            "marketing digital",
+            "tráfego pago",
+            "Google Ads",
+            "anúncios online",
+            "gerar clientes pela internet"
         ],
         "image": "https://ntadigital.com.br/assets/img/logo-nta-full.png",
         "priceRange": "$$"
@@ -146,11 +155,11 @@
              ═══════════════════════════════════════ -->
         <section class="h-hero" aria-label="Página inicial">
 
-            <!-- Background: vídeo -->
+            <!-- Background: imagem estática -->
             <div class="h-hero__bg" aria-hidden="true">
-                <video class="h-hero__video" autoplay muted loop playsinline preload="auto">
-                    <source src="./assets/video/hero-01.mp4?v=2" type="video/mp4">
-                </video>
+                <img class="h-hero__image" src="./assets/img/hero-home.webp"
+                    alt="Agência de marketing digital com foco em tráfego pago e anúncios online" width="1747"
+                    height="982" fetchpriority="high">
             </div>
             <div class="h-hero__overlay" aria-hidden="true"></div>
 
@@ -159,14 +168,13 @@
                 <div class="h-hero__content">
 
                     <h1 class="h-hero__title">
-                        Mais clientes.<br>
-                        Mais vendas.<br>
-                        <em>Resultado real.</em>
+                        Agência de Marketing Digital focada em gerar clientes e vendas.<br>
+                        <em>Chega de investir em anúncios sem retorno.</em>
                     </h1>
 
                     <p class="h-hero__desc">
-                        Transformamos tráfego pago em crescimento previsível. Estratégias personalizadas que geram
-                        clientes e escalam o seu negócio.
+                        Atuamos com uma estratégia completa que une tráfego pago, posicionamento e estrutura de
+                        conversão para transformar o seu investimento em faturamento real.
                     </p>
 
                     <!-- CTA + Social proof -->
@@ -174,7 +182,7 @@
 
                         <a href="#" class="h-hero__cta" data-whatsapp
                             data-whatsapp-msg="Olá, vim pelo site e quero saber como gerar mais clientes para minha empresa!">
-                            Quero Gerar Clientes
+                            Quero mais clientes
                             <span class="h-hero__cta-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
@@ -182,6 +190,10 @@
                                     <path d="M5 12h14M12 5l7 7-7 7" />
                                 </svg>
                             </span>
+                        </a>
+                        <a href="#" class="h-hero__cta h-hero__cta--secondary" data-whatsapp
+                            data-whatsapp-msg="Olá, vim pelo site e quero solicitar uma análise gratuita do meu negócio!">
+                            Solicitar análise gratuita
                         </a>
 
 
@@ -348,41 +360,14 @@
         </div>
 
 
-        <!-- ═══════════════════════════════════════
-             STATS
-             ═══════════════════════════════════════ -->
-        <section class="h-stats" id="numeros" aria-label="Números NTA Digital">
+        <section class="h-seo-intro" aria-label="Agência de marketing digital em Curitiba">
             <div class="container">
-                <div class="h-stats__grid reveal-stagger">
-                    <div class="h-stat">
-                        <div class="h-stat__line"></div>
-                        <div class="h-stat__num">
-                            <span data-count="1000" data-suffix="+">1.000+</span>
-                        </div>
-                        <p class="h-stat__label">Empresas atendidas em todo o Brasil</p>
-                    </div>
-                    <div class="h-stat">
-                        <div class="h-stat__line"></div>
-                        <div class="h-stat__num">
-                            R$<span data-count="15" data-suffix="M+">15M+</span>
-                        </div>
-                        <p class="h-stat__label">Em receita gerada para nossos clientes</p>
-                    </div>
-                    <div class="h-stat">
-                        <div class="h-stat__line"></div>
-                        <div class="h-stat__num">
-                            <span data-count="98" data-suffix="%">98%</span>
-                        </div>
-                        <p class="h-stat__label">De satisfação dos clientes atendidos</p>
-                    </div>
-                    <div class="h-stat">
-                        <div class="h-stat__line"></div>
-                        <div class="h-stat__num">
-                            <span data-count="5" data-suffix="+">5+</span>
-                        </div>
-                        <p class="h-stat__label">Anos de experiência no mercado digital</p>
-                    </div>
-                </div>
+                <p class="h-seo-intro__text reveal">
+                    Somos uma agência de <strong>marketing digital</strong> em Curitiba especializada em
+                    <strong>tráfego pago</strong>, posicionamento no Google e aumento de vendas pela internet. Atuamos
+                    com estratégias completas que envolvem <strong>anúncios online</strong>, presença digital e
+                    estrutura de conversão para empresas que desejam vender mais.
+                </p>
             </div>
         </section>
 
@@ -403,7 +388,7 @@
                             </svg>
                             O que fazemos
                         </div>
-                        <h2 class="h-section-title">Serviços que geram<br>resultados reais</h2>
+                        <h2 class="h-section-title">Serviços de Marketing Digital para gerar clientes</h2>
                     </div>
                     <a href="./pages/servicos.html" class="h-section-link">
                         Ver todos os serviços
@@ -426,10 +411,10 @@
                                 <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
                             </svg>
                         </div>
-                        <h3 class="h-service-card__title">Tráfego pago</h3>
+                        <h3 class="h-service-card__title">Tráfego Pago</h3>
                         <p class="h-service-card__desc">
-                            Criamos e gerenciamos campanhas que colocam sua marca na frente de quem está pronto para
-                            comprar. Retorno mensurável desde o primeiro dia.
+                            Gestão de tráfego pago no Google Ads e redes sociais para atrair clientes qualificados todos
+                            os dias. Campanhas estruturadas com foco em geração de leads e vendas.
                         </p>
                         <div class="h-service-card__tags">
                             <span class="h-service-card__tag">Meta Ads</span>
@@ -455,10 +440,10 @@
                                 <polyline points="16 7 22 7 22 13" />
                             </svg>
                         </div>
-                        <h3 class="h-service-card__title">Posicionamento digital</h3>
+                        <h3 class="h-service-card__title">Posicionamento Digital</h3>
                         <p class="h-service-card__desc">
-                            Construímos a presença digital da sua marca para que ela seja encontrada, reconhecida e
-                            lembrada pelo público certo, nas plataformas certas.
+                            Estratégias de posicionamento no Google e redes sociais para aumentar a visibilidade da sua
+                            empresa e atrair mais clientes pela internet.
                         </p>
                         <div class="h-service-card__tags">
                             <span class="h-service-card__tag">Branding</span>
@@ -484,10 +469,10 @@
                                 <path d="M3 9h18M9 21V9" />
                             </svg>
                         </div>
-                        <h3 class="h-service-card__title">Site estratégico</h3>
+                        <h3 class="h-service-card__title">Landing Page</h3>
                         <p class="h-service-card__desc">
-                            Desenvolvemos sites e landing pages focados em conversão. Cada elemento é pensado para
-                            transformar visitantes em clientes e clientes em fãs.
+                            Criação de Landing Pages otimizadas para conversão e SEO, preparadas para transformar
+                            visitantes em oportunidades de negócio.
                         </p>
                         <div class="h-service-card__tags">
                             <span class="h-service-card__tag">Landing Pages</span>
@@ -504,6 +489,31 @@
                         </a>
                     </div>
 
+                </div>
+
+                <div class="h-search-visibility reveal">
+                    <div class="h-search-visibility__content">
+                        <span class="h-search-visibility__eyebrow">Google Ads e intenção de compra</span>
+                        <h3 class="h-search-visibility__title">
+                            Sua empresa sendo encontrada por quem já está pronto para comprar
+                        </h3>
+                        <p class="h-search-visibility__text">
+                            Apareça quando e onde os seus clientes procuram e transforme buscas em vendas reais. Com
+                            anúncios online bem estruturados, sua marca ganha presença nas primeiras posições do Google
+                            para termos que já indicam intenção de compra.
+                        </p>
+                    </div>
+                    <div class="h-search-visibility__panel" aria-hidden="true">
+                        <div class="h-search-visibility__bar">agência de marketing digital em Curitiba</div>
+                        <div class="h-search-visibility__result">
+                            <strong>NTA Digital</strong>
+                            <span>Tráfego pago, Google Ads e geração de clientes</span>
+                        </div>
+                        <div class="h-search-visibility__result h-search-visibility__result--muted">
+                            <strong>Marketing digital para vender mais</strong>
+                            <span>Anúncios online com foco em conversão</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -526,7 +536,7 @@
                             </svg>
                             Nossa metodologia
                         </div>
-                        <h2 class="h-process__main-title">Do diagnóstico<br>à escala real</h2>
+                        <h2 class="h-process__main-title">Diagnóstico / Estratégia / Execução</h2>
                         <p class="h-process__main-desc">Nossa metodologia foi construída para eliminar desperdício de
                             verba e entregar crescimento previsível. Cada etapa tem propósito e resultado mensurável.
                         </p>
@@ -559,8 +569,9 @@
                                 identificar onde estão as maiores oportunidades de crescimento e onde o dinheiro está
                                 sendo desperdiçado.</p>
                             <div class="h-process-step__img-wrap">
-                                <img src="./assets/img/blog-investimento.png" alt="Diagnóstico"
-                                    class="h-process-step__img" loading="lazy">
+                                <img src="./assets/img/diagnostico-marketing-digital.webp"
+                                    alt="Diagnóstico de marketing digital" class="h-process-step__img" width="1024"
+                                    height="1024" loading="lazy">
                             </div>
                         </div>
 
@@ -573,8 +584,9 @@
                                 orçamento otimizado e metas claras para o seu perfil de cliente ideal — sem achismo, só
                                 dados.</p>
                             <div class="h-process-step__img-wrap">
-                                <img src="./assets/img/metodologia-estrategia.jpg" alt="Estratégia" class="h-process-step__img"
-                                    loading="lazy">
+                                <img src="./assets/img/estrategia-trafego-pago.webp"
+                                    alt="Estratégia de tráfego pago e anúncios online" class="h-process-step__img"
+                                    width="1600" height="1045" loading="lazy">
                             </div>
                         </div>
 
@@ -587,8 +599,9 @@
                                 Quando algo funciona, escalamos. Quando não funciona, ajustamos rápido. Sem burocracia.
                             </p>
                             <div class="h-process-step__img-wrap">
-                                <img src="./assets/img/metodologia-execucao.jpg" alt="Execução e Escala"
-                                    class="h-process-step__img" loading="lazy">
+                                <img src="./assets/img/execucao-google-ads.webp"
+                                    alt="Execução de campanhas de Google Ads e marketing digital"
+                                    class="h-process-step__img" width="1500" height="841" loading="lazy">
                             </div>
                         </div>
 
@@ -607,8 +620,10 @@
 
                     <!-- Image -->
                     <div class="h-about__image reveal--left reveal">
-                        <img src="./assets/img/image copy.png" alt="Fundador da NTA Digital" class="h-about__photo"
-                            loading="lazy" onerror="this.style.background='#F5F5F5'; this.removeAttribute('onerror');">
+                        <img src="./assets/img/equipe-nta-digital.webp"
+                            alt="Equipe da NTA Digital, agência de marketing digital em Curitiba" class="h-about__photo"
+                            width="737" height="982" loading="lazy"
+                            onerror="this.style.background='#F5F5F5'; this.removeAttribute('onerror');">
                         <div class="h-about__image-badge">
                             <div class="h-about__image-badge-num">
                                 <span data-count="1000" data-prefix="+">+1K</span>
@@ -629,12 +644,14 @@
                             Por que a NTA Digital
                         </div>
                         <h2 class="h-section-title">
-                            Não vendemos serviço.<br><span style="white-space: nowrap;">Entregamos crescimento.</span>
+                            Agência de marketing digital com foco em resultado
                         </h2>
 
                         <p class="h-about__desc" style="margin-top:20px;">
-                            Somos especialistas em transformar investimento em marketing digital em resultados
-                            concretos: mais clientes, mais vendas, mais crescimento.
+                            A NTA Digital é uma agência de <strong>tráfego pago</strong> em Curitiba especializada em
+                            <strong>gerar clientes</strong> pela internet. Nosso trabalho envolve tráfego pago,
+                            posicionamento no Google e construção de uma estrutura digital completa para empresas que
+                            desejam crescer com consistência.
                         </p>
 
                         <ul class="h-about__list">
@@ -717,6 +734,80 @@
             </div>
         </section>
 
+        <!-- ═══════════════════════════════════════
+             STATS
+             ═══════════════════════════════════════ -->
+        <section class="h-stats" id="numeros" aria-label="Números NTA Digital">
+            <div class="container">
+                <div class="h-stats__grid reveal-stagger">
+                    <div class="h-stat">
+                        <div class="h-stat__line"></div>
+                        <div class="h-stat__num">
+                            <span data-count="1000" data-suffix="+">1.000+</span>
+                        </div>
+                        <p class="h-stat__label">Empresas atendidas em todo o Brasil</p>
+                    </div>
+                    <div class="h-stat">
+                        <div class="h-stat__line"></div>
+                        <div class="h-stat__num">
+                            R$<span data-count="15" data-suffix="M+">15M+</span>
+                        </div>
+                        <p class="h-stat__label">Em receita gerada para nossos clientes</p>
+                    </div>
+                    <div class="h-stat">
+                        <div class="h-stat__line"></div>
+                        <div class="h-stat__num">
+                            <span data-count="98" data-suffix="%">98%</span>
+                        </div>
+                        <p class="h-stat__label">De satisfação dos clientes atendidos</p>
+                    </div>
+                    <div class="h-stat">
+                        <div class="h-stat__line"></div>
+                        <div class="h-stat__num">
+                            <span data-count="5" data-suffix="+">5+</span>
+                        </div>
+                        <p class="h-stat__label">Anos de experiência no mercado digital</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="h-problem" aria-labelledby="problema-clientes-titulo">
+            <div class="container">
+                <div class="h-problem__grid">
+                    <div class="h-problem__content reveal">
+                        <div class="h-section-tag">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 8v4M12 16h.01" />
+                            </svg>
+                            SEO + conversão
+                        </div>
+                        <h2 class="h-section-title" id="problema-clientes-titulo">
+                            Por que sua empresa não está gerando clientes pela internet?
+                        </h2>
+                        <p class="h-problem__text">
+                            Se sua empresa já investe em marketing digital ou tráfego pago, mas não vê resultado, o
+                            problema pode estar na falta de estrutura digital.
+                        </p>
+                    </div>
+                    <div class="h-problem__panel reveal-stagger">
+                        <ul class="h-problem__list">
+                            <li>Investe em anúncios e não gera clientes</li>
+                            <li>Recebe contatos, mas não converte em vendas</li>
+                            <li>Não aparece bem no Google</li>
+                            <li>Não tem estratégia clara de marketing digital</li>
+                        </ul>
+                        <p class="h-problem__conclusion">
+                            Sem estrutura, o marketing digital não gera crescimento consistente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <!-- ═══════════════════════════════════════
              TESTIMONIALS
@@ -736,8 +827,9 @@
                             </svg>
                             Depoimentos
                         </div>
-                        <h2 class="h-section-title">O que nossos clientes<br>falam da NTA</h2>
-                        <p class="h-testimonials__subtitle">Resultados reais de quem confiou no nosso trabalho.</p>
+                        <h2 class="h-section-title">Resultados de tráfego pago que já geramos</h2>
+                        <p class="h-testimonials__subtitle">Empresas que confiaram na NTA Digital e hoje possuem mais
+                            visibilidade no Google, mais clientes e crescimento previsível.</p>
                     </div>
 
                     <!-- RIGHT: Two scrolling columns -->
@@ -750,94 +842,102 @@
                                 <div class="h-testi-card">
                                     <div class="h-testi-card__stars">★★★★★</div>
                                     <span class="h-testi-card__quote-icon">"</span>
-                                    <p class="h-testi-card__quote">Em 60 dias triplicamos o número de agendamentos na
-                                        clínica. A NTA não só entregou resultado, como me ensinou a entender os números.
-                                        Não vou trocar por nada.</p>
+                                    <p class="h-testi-card__quote">Gostaria de registrar meu reconhecimento e admiração
+                                        pelo trabalho da equipe da NTA. A Natana tem grande profissionalismo e clareza nas
+                                        estratégias e o compromisso com resultados são notáveis. Desde o início do
+                                        trabalho, percebi o cuidado em entender o público-alvo, otimizar campanhas e
+                                        ajustar cada detalhe para alcançar o melhor desempenho possível. A Natana e NTA
+                                        demonstram domínio técnico, sensibilidade com a marca e foco genuíno em gerar
+                                        valor real para a Geoloc.</p>
                                     <div class="h-testi-card__author">
-                                        <div class="h-testi-card__avatar" style="background:#FFB400;">C</div>
+                                        <div class="h-testi-card__avatar" style="background:#FFB400;">K</div>
                                         <div>
-                                            <div class="h-testi-card__name">Camila Ramos</div>
-                                            <div class="h-testi-card__role">Clínica de Estética · Curitiba</div>
-                                        </div>
-                                        <div class="h-testi-card__result">+3× leads</div>
+                                             <div class="h-testi-card__name">Kelly Pereira</div>
+                                             <div class="h-testi-card__role">Geoloc Engenharia · Google</div>
+                                         </div>
+                                         <div class="h-testi-card__result">Google 5★</div>
                                     </div>
                                 </div>
                                 <!-- Card 2 -->
                                 <div class="h-testi-card">
                                     <div class="h-testi-card__stars">★★★★★</div>
                                     <span class="h-testi-card__quote-icon">"</span>
-                                    <p class="h-testi-card__quote">Meu e-commerce estava estagnado há meses. Com a
-                                        gestão da NTA o ROAS subiu de 1.8× para 4.5× em apenas 45 dias. Agora finalmente
-                                        consigo escalar com segurança.</p>
+                                    <p class="h-testi-card__quote">Tive uma ótima experiência com a empresa. Atendimento
+                                        rápido, equipe muito profissional e os resultados superaram minhas expectativas.
+                                        Com certeza continuarei trabalhando com eles e recomendo.</p>
                                     <div class="h-testi-card__author">
-                                        <div class="h-testi-card__avatar" style="background:#FFD54F;">A</div>
+                                        <div class="h-testi-card__avatar" style="background:#009688;color:#fff;">G</div>
                                         <div>
-                                            <div class="h-testi-card__name">Ana Beatriz Lima</div>
-                                            <div class="h-testi-card__role">E-commerce de Moda · SP</div>
+                                            <div class="h-testi-card__name">Gilberto Nabor</div>
+                                            <div class="h-testi-card__role">Avaliação no Google</div>
                                         </div>
-                                        <div class="h-testi-card__result">ROAS 4.5×</div>
+                                        <div class="h-testi-card__result">Google 5★</div>
                                     </div>
                                 </div>
                                 <!-- Card 3 -->
                                 <div class="h-testi-card">
                                     <div class="h-testi-card__stars">★★★★★</div>
                                     <span class="h-testi-card__quote-icon">"</span>
-                                    <p class="h-testi-card__quote">Começamos do zero no digital e em 3 meses já
-                                        estávamos gerando R$ 80k em novas oportunidades todo mês. A equipe da NTA é
-                                        extremamente comprometida.</p>
+                                    <p class="h-testi-card__quote">Parabenizo toda a equipe pelo trabalho impecável e
+                                        pela contribuição significativa para o fortalecimento da marca e expansão dos
+                                        resultados.</p>
                                     <div class="h-testi-card__author">
-                                        <div class="h-testi-card__avatar" style="background:#0A0A0A;color:#fff;">M</div>
+                                        <div class="h-testi-card__avatar" style="background:#0A0A0A;color:#fff;">G</div>
                                         <div>
-                                            <div class="h-testi-card__name">Marcos Ferreira</div>
-                                            <div class="h-testi-card__role">Indústria · Joinville</div>
+                                            <div class="h-testi-card__name">Geoloc Engenharia e Geologia</div>
+                                            <div class="h-testi-card__role">Especialistas em Solos · Google</div>
                                         </div>
-                                        <div class="h-testi-card__result">+320% faturamento</div>
+                                        <div class="h-testi-card__result">Google 5★</div>
                                     </div>
                                 </div>
                                 <!-- Duplicated for seamless loop -->
                                 <div class="h-testi-card">
                                     <div class="h-testi-card__stars">★★★★★</div>
                                     <span class="h-testi-card__quote-icon">"</span>
-                                    <p class="h-testi-card__quote">Em 60 dias triplicamos o número de agendamentos na
-                                        clínica. A NTA não só entregou resultado, como me ensinou a entender os números.
-                                        Não vou trocar por nada.</p>
+                                    <p class="h-testi-card__quote">Gostaria de registrar meu reconhecimento e admiração
+                                        pelo trabalho da equipe da NTA. A Natana tem grande profissionalismo e clareza nas
+                                        estratégias e o compromisso com resultados são notáveis. Desde o início do
+                                        trabalho, percebi o cuidado em entender o público-alvo, otimizar campanhas e
+                                        ajustar cada detalhe para alcançar o melhor desempenho possível. A Natana e NTA
+                                        demonstram domínio técnico, sensibilidade com a marca e foco genuíno em gerar
+                                        valor real para a Geoloc.</p>
                                     <div class="h-testi-card__author">
-                                        <div class="h-testi-card__avatar" style="background:#FFB400;">C</div>
+                                        <div class="h-testi-card__avatar" style="background:#FFB400;">K</div>
                                         <div>
-                                            <div class="h-testi-card__name">Camila Ramos</div>
-                                            <div class="h-testi-card__role">Clínica de Estética · Curitiba</div>
+                                            <div class="h-testi-card__name">Kelly Pereira</div>
+                                            <div class="h-testi-card__role">Geoloc Engenharia · Google</div>
                                         </div>
-                                        <div class="h-testi-card__result">+3× leads</div>
+                                        <div class="h-testi-card__result">Google 5★</div>
                                     </div>
                                 </div>
                                 <div class="h-testi-card">
                                     <div class="h-testi-card__stars">★★★★★</div>
                                     <span class="h-testi-card__quote-icon">"</span>
-                                    <p class="h-testi-card__quote">Meu e-commerce estava estagnado há meses. Com a
-                                        gestão da NTA o ROAS subiu de 1.8× para 4.5× em apenas 45 dias. Agora finalmente
-                                        consigo escalar com segurança.</p>
+                                    <p class="h-testi-card__quote">Tive uma ótima experiência com a empresa. Atendimento
+                                        rápido, equipe muito profissional e os resultados superaram minhas expectativas.
+                                        Com certeza continuarei trabalhando com eles e recomendo.</p>
                                     <div class="h-testi-card__author">
-                                        <div class="h-testi-card__avatar" style="background:#FFD54F;">A</div>
+                                        <div class="h-testi-card__avatar" style="background:#009688;color:#fff;">G</div>
                                         <div>
-                                            <div class="h-testi-card__name">Ana Beatriz Lima</div>
-                                            <div class="h-testi-card__role">E-commerce de Moda · SP</div>
+                                            <div class="h-testi-card__name">Gilberto Nabor</div>
+                                            <div class="h-testi-card__role">Avaliação no Google</div>
                                         </div>
-                                        <div class="h-testi-card__result">ROAS 4.5×</div>
+                                        <div class="h-testi-card__result">Google 5★</div>
                                     </div>
                                 </div>
                                 <div class="h-testi-card">
                                     <div class="h-testi-card__stars">★★★★★</div>
                                     <span class="h-testi-card__quote-icon">"</span>
-                                    <p class="h-testi-card__quote">Começamos do zero no digital e em 3 meses já
-                                        estávamos gerando R$ 80k em novas oportunidades todo mês. A equipe da NTA é
-                                        extremamente comprometida.</p>
+                                    <p class="h-testi-card__quote">Parabenizo toda a equipe pelo trabalho impecável e
+                                        pela contribuição significativa para o fortalecimento da marca e expansão dos
+                                        resultados.</p>
                                     <div class="h-testi-card__author">
-                                        <div class="h-testi-card__avatar" style="background:#0A0A0A;color:#fff;">M</div>
+                                        <div class="h-testi-card__avatar" style="background:#0A0A0A;color:#fff;">G</div>
                                         <div>
-                                            <div class="h-testi-card__name">Marcos Ferreira</div>
-                                            <div class="h-testi-card__role">Indústria · Joinville</div>
+                                            <div class="h-testi-card__name">Geoloc Engenharia e Geologia</div>
+                                            <div class="h-testi-card__role">Especialistas em Solos · Google</div>
                                         </div>
-                                        <div class="h-testi-card__result">+320% faturamento</div>
+                                        <div class="h-testi-card__result">Google 5★</div>
                                     </div>
                                 </div>
                             </div>
@@ -850,94 +950,94 @@
                                 <div class="h-testi-card">
                                     <div class="h-testi-card__stars">★★★★★</div>
                                     <span class="h-testi-card__quote-icon">"</span>
-                                    <p class="h-testi-card__quote">Tínhamos dificuldade em gerar orçamentos
-                                        qualificados. A NTA estruturou nossas campanhas e hoje temos uma fila de
-                                        clientes. O investimento se pagou no primeiro mês.</p>
+                                    <p class="h-testi-card__quote">Ótimo atendimento e entrega os resultados desejados,
+                                        recomendo!</p>
                                     <div class="h-testi-card__author">
-                                        <div class="h-testi-card__avatar" style="background:#0A0A0A;color:#fff;">R</div>
+                                        <div class="h-testi-card__avatar" style="background:#0097A7;color:#fff;">I</div>
                                         <div>
-                                            <div class="h-testi-card__name">Ricardo Souza</div>
-                                            <div class="h-testi-card__role">Construtora · Paraná</div>
+                                            <div class="h-testi-card__name">Isabelle Soares</div>
+                                            <div class="h-testi-card__role">Avaliação no Google</div>
                                         </div>
-                                        <div class="h-testi-card__result">↓52% CPL</div>
+                                        <div class="h-testi-card__result">Google 5★</div>
                                     </div>
                                 </div>
                                 <!-- Card 5 -->
                                 <div class="h-testi-card">
                                     <div class="h-testi-card__stars">★★★★★</div>
                                     <span class="h-testi-card__quote-icon">"</span>
-                                    <p class="h-testi-card__quote">A NTA transformou nossa presença no digital. Antes
-                                        éramos invisíveis, hoje somos referência na região. Crescemos 200% em receita em
-                                        menos de 6 meses.</p>
+                                    <p class="h-testi-card__quote">Empresa séria e comprometida em trazer os resultados
+                                        que o cliente espera. Já tive outras, mas essa é a melhor.</p>
                                     <div class="h-testi-card__author">
-                                        <div class="h-testi-card__avatar" style="background:#FFB400;">J</div>
+                                        <div class="h-testi-card__avatar" style="background:#2196F3;color:#fff;">M</div>
                                         <div>
-                                            <div class="h-testi-card__name">Juliana Nascimento</div>
-                                            <div class="h-testi-card__role">Clínica Odontológica · BH</div>
+                                            <div class="h-testi-card__name">marketing gds</div>
+                                            <div class="h-testi-card__role">Avaliação no Google</div>
                                         </div>
-                                        <div class="h-testi-card__result">+200% receita</div>
+                                        <div class="h-testi-card__result">Google 5★</div>
                                     </div>
                                 </div>
                                 <!-- Card 6 -->
                                 <div class="h-testi-card">
                                     <div class="h-testi-card__stars">★★★★★</div>
                                     <span class="h-testi-card__quote-icon">"</span>
-                                    <p class="h-testi-card__quote">Tentei outras agências antes da NTA e nenhuma
-                                        entregou resultado. Aqui em 30 dias já tinha retorno mensurável. Clareza total
-                                        nos relatórios, zero enrolação.</p>
+                                    <p class="h-testi-card__quote">Gostaria de registrar meu reconhecimento e admiração
+                                        pelo trabalho da equipe da NTA. A Natana tem grande profissionalismo e clareza nas
+                                        estratégias e o compromisso com resultados são notáveis. Desde o início do
+                                        trabalho, percebi o cuidado em entender o público-alvo, otimizar campanhas e
+                                        ajustar cada detalhe para alcançar o melhor desempenho possível. A Natana e NTA
+                                        demonstram domínio técnico, sensibilidade com a marca e foco genuíno em gerar
+                                        valor real para a Geoloc.</p>
                                     <div class="h-testi-card__author">
-                                        <div class="h-testi-card__avatar" style="background:#333;color:#fff;">P</div>
+                                        <div class="h-testi-card__avatar" style="background:#FFB400;">K</div>
                                         <div>
-                                            <div class="h-testi-card__name">Paulo Henrique</div>
-                                            <div class="h-testi-card__role">Escritório de Advocacia · SP</div>
+                                            <div class="h-testi-card__name">Kelly Pereira</div>
+                                            <div class="h-testi-card__role">Geoloc Engenharia · Google</div>
                                         </div>
-                                        <div class="h-testi-card__result">4× clientes</div>
+                                        <div class="h-testi-card__result">Google 5★</div>
                                     </div>
                                 </div>
                                 <!-- Duplicated for seamless loop -->
                                 <div class="h-testi-card">
                                     <div class="h-testi-card__stars">★★★★★</div>
                                     <span class="h-testi-card__quote-icon">"</span>
-                                    <p class="h-testi-card__quote">Tínhamos dificuldade em gerar orçamentos
-                                        qualificados. A NTA estruturou nossas campanhas e hoje temos uma fila de
-                                        clientes. O investimento se pagou no primeiro mês.</p>
+                                    <p class="h-testi-card__quote">Ótimo atendimento e entrega os resultados desejados,
+                                        recomendo!</p>
                                     <div class="h-testi-card__author">
-                                        <div class="h-testi-card__avatar" style="background:#0A0A0A;color:#fff;">R</div>
+                                        <div class="h-testi-card__avatar" style="background:#0097A7;color:#fff;">I</div>
                                         <div>
-                                            <div class="h-testi-card__name">Ricardo Souza</div>
-                                            <div class="h-testi-card__role">Construtora · Paraná</div>
+                                            <div class="h-testi-card__name">Isabelle Soares</div>
+                                            <div class="h-testi-card__role">Avaliação no Google</div>
                                         </div>
-                                        <div class="h-testi-card__result">↓52% CPL</div>
+                                        <div class="h-testi-card__result">Google 5★</div>
                                     </div>
                                 </div>
                                 <div class="h-testi-card">
                                     <div class="h-testi-card__stars">★★★★★</div>
                                     <span class="h-testi-card__quote-icon">"</span>
-                                    <p class="h-testi-card__quote">A NTA transformou nossa presença no digital. Antes
-                                        éramos invisíveis, hoje somos referência na região. Crescemos 200% em receita em
-                                        menos de 6 meses.</p>
+                                    <p class="h-testi-card__quote">Empresa séria e comprometida em trazer os resultados
+                                        que o cliente espera. Já tive outras, mas essa é a melhor.</p>
                                     <div class="h-testi-card__author">
-                                        <div class="h-testi-card__avatar" style="background:#FFB400;">J</div>
+                                        <div class="h-testi-card__avatar" style="background:#2196F3;color:#fff;">M</div>
                                         <div>
-                                            <div class="h-testi-card__name">Juliana Nascimento</div>
-                                            <div class="h-testi-card__role">Clínica Odontológica · BH</div>
+                                            <div class="h-testi-card__name">marketing gds</div>
+                                            <div class="h-testi-card__role">Avaliação no Google</div>
                                         </div>
-                                        <div class="h-testi-card__result">+200% receita</div>
+                                        <div class="h-testi-card__result">Google 5★</div>
                                     </div>
                                 </div>
                                 <div class="h-testi-card">
                                     <div class="h-testi-card__stars">★★★★★</div>
                                     <span class="h-testi-card__quote-icon">"</span>
-                                    <p class="h-testi-card__quote">Tentei outras agências antes da NTA e nenhuma
-                                        entregou resultado. Aqui em 30 dias já tinha retorno mensurável. Clareza total
-                                        nos relatórios, zero enrolação.</p>
+                                    <p class="h-testi-card__quote">Tive uma ótima experiência com a empresa. Atendimento
+                                        rápido, equipe muito profissional e os resultados superaram minhas expectativas.
+                                        Com certeza continuarei trabalhando com eles e recomendo.</p>
                                     <div class="h-testi-card__author">
-                                        <div class="h-testi-card__avatar" style="background:#333;color:#fff;">P</div>
+                                        <div class="h-testi-card__avatar" style="background:#009688;color:#fff;">G</div>
                                         <div>
-                                            <div class="h-testi-card__name">Paulo Henrique</div>
-                                            <div class="h-testi-card__role">Escritório de Advocacia · SP</div>
+                                            <div class="h-testi-card__name">Gilberto Nabor</div>
+                                            <div class="h-testi-card__role">Avaliação no Google</div>
                                         </div>
-                                        <div class="h-testi-card__result">4× clientes</div>
+                                        <div class="h-testi-card__result">Google 5★</div>
                                     </div>
                                 </div>
                             </div>
@@ -953,21 +1053,15 @@
              FINAL CTA
              ═══════════════════════════════════════ -->
         <section class="h-cta" id="contato" aria-label="Entre em contato">
-            <div class="h-cta__bg">
-                <video class="h-cta__video" autoplay muted loop playsinline>
-                    <source src="./assets/video/cta-bg.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="h-cta__overlay"></div>
             <div class="container">
                 <div class="h-cta__inner reveal">
-                    <p class="h-cta__label">Pronto para crescer?</p>
+                    <p class="h-cta__label">Marketing digital para vender mais</p>
                     <h2 class="h-cta__title">
-                        Vamos transformar<br>seu negócio juntos
+                        Quer gerar mais clientes com marketing digital?
                     </h2>
                     <p class="h-cta__subtitle">
-                        Fale com um especialista agora e descubra como podemos
-                        gerar mais clientes e vendas para a sua empresa.
+                        Fale com a gente no WhatsApp ou ligue agora para entender como <strong>tráfego pago</strong>,
+                        <strong>Google Ads</strong> e estrutura de conversão podem <strong>aumentar suas vendas</strong>.
                     </p>
                     <div class="h-cta__actions">
                         <a href="https://wa.me/5541998081519?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20uma%20an%C3%A1lise%20gratuita%20do%20meu%20neg%C3%B3cio!"
@@ -1097,7 +1191,7 @@
                             <span class="footer__link" style="cursor:default">
                                 <i data-lucide="map-pin"
                                     style="width:14px;height:14px;display:inline;vertical-align:middle;margin-right:6px"></i>
-                                Curitiba — PR
+                                Rua Napoleão Laureano N 44 – Boqueirão – Curitiba PR
                             </span>
                         </li>
                     </ul>
