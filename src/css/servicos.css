@@ -33,7 +33,8 @@
     overflow: hidden;
 }
 
-.s-services-hero__video {
+.s-services-hero__video,
+.s-services-hero__image {
     position: absolute;
     inset: 0;
     width: 100%;

@@ -20,7 +20,8 @@
     pointer-events: none;
 }
 
-.s-hero__video {
+.s-hero__video,
+.s-hero__image {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -477,4 +478,3 @@
 .s-page .nav--hero.nav--scrolled {
     background: rgba(8, 8, 8, 0.95);
 }
-

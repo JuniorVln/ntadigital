@@ -1261,7 +1261,8 @@
     overflow: hidden;
 }
 
-.h-cta__video {
+.h-cta__video,
+.h-cta__image {
     position: absolute;
     inset: 0;
     width: 100%;
