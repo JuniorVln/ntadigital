@@ -24,8 +24,7 @@ function initNavigation() {
     if (!nav) return;
 
     // Scroll effect
-    let lastScrollY = 0;
-    window.addEventListener('scroll', () => {
+    const updateScrollState = () => {
         const scrollY = window.scrollY;
 
         if (scrollY > 50) {
@@ -34,16 +33,21 @@ function initNavigation() {
             nav.classList.remove('nav--scrolled');
         }
 
-        lastScrollY = scrollY;
-    }, { passive: true });
+        document.body.classList.toggle('is-scrolled', scrollY > 120);
+    };
+
+    updateScrollState();
+    window.addEventListener('scroll', updateScrollState, { passive: true });
 
     // Mobile menu toggle
     if (toggle && mobileNav) {
         toggle.addEventListener('click', () => {
             toggle.classList.toggle('nav__toggle--active');
             mobileNav.classList.toggle('nav__mobile--open');
+            const isOpen = mobileNav.classList.contains('nav__mobile--open');
+            document.body.classList.toggle('nav-open', isOpen);
             document.body.style.overflow =
-                mobileNav.classList.contains('nav__mobile--open') ? 'hidden' : '';
+                isOpen ? 'hidden' : '';
         });
 
         // Close on link click
@@ -51,6 +55,7 @@ function initNavigation() {
             link.addEventListener('click', () => {
                 toggle.classList.remove('nav__toggle--active');
                 mobileNav.classList.remove('nav__mobile--open');
+                document.body.classList.remove('nav-open');
                 document.body.style.overflow = '';
             });
         });

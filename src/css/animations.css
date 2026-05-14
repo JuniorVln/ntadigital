@@ -157,3 +157,13 @@
     .reveal { opacity: 1; transform: none; filter: none; }
     .reveal-stagger > * { opacity: 1; transform: none; }
 }
+
+@media (max-width: 768px) {
+    .reveal {
+        filter: none;
+    }
+
+    .reveal--visible {
+        filter: none;
+    }
+}
